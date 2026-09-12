@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "updated": "2026-09-12",
+  "sources": [
+    "1Password/shell-plugins@ccc32b471e117d387dbb399c68664d5f79f3d306 (MIT)"
+  ],
+  "notes": "prefixのみ。秘密値は含まない。confidence=medium以下は候補表示のみに使う",
+  "prefixes": [
+    {"prefix": "sk-ant-", "serviceId": "anthropic", "confidence": "high"},
+    {"prefix": "AKIA", "serviceId": "aws", "confidence": "high"},
+    {"prefix": "crsr_", "serviceId": "cursor", "confidence": "high"},
+    {"prefix": "dop_v1_", "serviceId": "digitalocean", "confidence": "high"},
+    {"prefix": "dp.", "serviceId": "doppler", "confidence": "high"},
+    {"prefix": "ghp_", "serviceId": "github", "confidence": "high"},
+    {"prefix": "github_pat_", "serviceId": "github", "confidence": "high"},
+    {"prefix": "glpat-", "serviceId": "gitlab", "confidence": "high"},
+    {"prefix": "gsk_", "serviceId": "groq", "confidence": "high"},
+    {"prefix": "hf_", "serviceId": "huggingface", "confidence": "high"},
+    {"prefix": "AIza", "serviceId": "google-gemini", "confidence": "high"},
+    {"prefix": "sk-or-", "serviceId": "openrouter", "confidence": "high"},
+    {"prefix": "sk_live_", "serviceId": "stripe", "confidence": "high"},
+    {"prefix": "sk_test_", "serviceId": "stripe", "confidence": "high"},
+    {"prefix": "xoxb-", "serviceId": "slack", "confidence": "high"},
+    {"prefix": "xoxp-", "serviceId": "slack", "confidence": "high"},
+    {"prefix": "sk-", "serviceId": "openai", "confidence": "medium", "note": "OpenAI互換APIと衝突しうる。候補の1件として表示"},
+    {"prefix": "rk_live_", "serviceId": "stripe", "confidence": "medium", "note": "制限付きキー"},
+    {"prefix": "rk_test_", "serviceId": "stripe", "confidence": "medium", "note": "制限付きキー"},
+    {"prefix": "ksk_", "serviceId": "kiro", "confidence": "medium"},
+    {"prefix": "pul-", "serviceId": "pulumi", "confidence": "medium"},
+    {"prefix": "pypi-", "serviceId": "pypi", "confidence": "medium"}
+  ]
+}

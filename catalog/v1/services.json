@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "updated": "2026-09-12",
+  "services": [
+    {"id": "codex", "displayName": "Codex", "category": "ai-subscription", "keywords": ["codex", "chatgpt"]},
+    {"id": "claude-code", "displayName": "Claude Code", "category": "ai-subscription", "keywords": ["claude code"]},
+    {"id": "gemini-cli", "displayName": "Gemini CLI", "category": "ai-subscription", "keywords": ["gemini cli"]},
+    {"id": "opencode", "displayName": "OpenCode", "category": "ai-subscription", "keywords": ["opencode", "zen"]},
+    {"id": "cursor", "displayName": "Cursor", "category": "ai-subscription", "keywords": ["cursor"]},
+    {"id": "copilot", "displayName": "GitHub Copilot", "category": "ai-subscription", "keywords": ["copilot", "github"]},
+    {"id": "antigravity", "displayName": "Antigravity", "category": "ai-subscription", "keywords": ["antigravity", "agy"]},
+    {"id": "google-gemini", "displayName": "Gemini API", "category": "api", "keywords": ["gemini", "google ai"], "keyUrl": "https://aistudio.google.com/apikey"},
+    {"id": "openai", "displayName": "OpenAI API", "category": "api", "keywords": ["openai", "gpt"], "keyUrl": "https://platform.openai.com/account/api-keys"},
+    {"id": "anthropic", "displayName": "Anthropic API", "category": "api", "keywords": ["anthropic", "claude api"], "keyUrl": "https://console.anthropic.com/settings/keys"},
+    {"id": "groq", "displayName": "Groq", "category": "api", "keywords": ["groq"], "keyUrl": "https://console.groq.com/keys"},
+    {"id": "openrouter", "displayName": "OpenRouter", "category": "api", "keywords": ["openrouter"], "keyUrl": "https://openrouter.ai/settings/keys"},
+    {"id": "github", "displayName": "GitHub", "category": "developer-service", "keywords": ["github", "gh", "pat"], "keyUrl": "https://github.com/settings/tokens"},
+    {"id": "gitlab", "displayName": "GitLab", "category": "developer-service", "keywords": ["gitlab"], "keyUrl": "https://gitlab.com/-/profile/personal_access_tokens"},
+    {"id": "stripe", "displayName": "Stripe", "category": "developer-service", "keywords": ["stripe", "決済"], "keyUrl": "https://dashboard.stripe.com/apikeys"},
+    {"id": "slack", "displayName": "Slack", "category": "developer-service", "keywords": ["slack"], "keyUrl": "https://api.slack.com/apps"},
+    {"id": "aws", "displayName": "AWS", "category": "developer-service", "keywords": ["aws", "amazon"], "keyUrl": "https://console.aws.amazon.com/iam"},
+    {"id": "digitalocean", "displayName": "DigitalOcean", "category": "developer-service", "keywords": ["digitalocean"], "keyUrl": "https://cloud.digitalocean.com/account/api/tokens"},
+    {"id": "doppler", "displayName": "Doppler", "category": "developer-service", "keywords": ["doppler"]},
+    {"id": "huggingface", "displayName": "Hugging Face", "category": "developer-service", "keywords": ["huggingface", "hugging face"]},
+    {"id": "supabase", "displayName": "Supabase", "category": "developer-service", "keywords": ["supabase"]},
+    {"id": "cloudflare", "displayName": "Cloudflare", "category": "developer-service", "keywords": ["cloudflare", "workers"]},
+    {"id": "vercel", "displayName": "Vercel", "category": "developer-service", "keywords": ["vercel"]},
+    {"id": "kiro", "displayName": "Kiro", "category": "ai-subscription", "keywords": ["kiro"]},
+    {"id": "pulumi", "displayName": "Pulumi", "category": "developer-service", "keywords": ["pulumi"]},
+    {"id": "pypi", "displayName": "PyPI", "category": "developer-service", "keywords": ["pypi", "python"]}
+  ]
+}
