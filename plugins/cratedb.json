@@ -1,0 +1,24 @@
+{
+  "name": "cratedb",
+  "platform": "CrateDB",
+  "homepage": "https://crate.io/",
+  "credentials": [
+    {
+      "name": "DatabaseCredentials",
+      "envVars": [
+        "CRATEPW"
+      ],
+      "docsUrl": "https://crate.io/docs/crate/crash/en/latest/run.html#environment-variables",
+      "managementUrl": "https://console.cratedb.cloud/account/settings"
+    }
+  ],
+  "executables": [
+    {
+      "name": "CrateDB Shell",
+      "runs": [
+        "crash"
+      ],
+      "docsUrl": "https://crate.io/docs/crate/crash/en/latest/"
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "updated": "2026-09-14",
+  "notes": "上流プラグイン名→KeyLake serviceId対応。空は未対応(人間判断で埋める)。",
+  "map": {
+    "akamai": {
+      "serviceId": ""
+    },
+    "anthropic": {
+      "serviceId": "anthropic"
+    },
+    "argocd": {
+      "serviceId": ""
+    },
+    "atlas": {
+      "serviceId": ""
+    },
+    "aws": {
+      "serviceId": ""
+    },
+    "axiom": {
+      "serviceId": ""
+    },
+    "binance": {
+      "serviceId": ""
+    },
+    "cachix": {
+      "serviceId": ""
+    },
+    "cargo": {
+      "serviceId": ""
+    },
+    "circleci": {
+      "serviceId": ""
+    },
+    "civo": {
+      "serviceId": ""
+    },
+    "cline": {
+      "serviceId": ""
+    },
+    "confluent": {
+      "serviceId": ""
+    },
+    "copilot": {
+      "serviceId": "copilot"
+    },
+    "cratedb": {
+      "serviceId": ""
+    },
+    "crowdin": {
+      "serviceId": ""
+    },
+    "cursor": {
+      "serviceId": "cursor"
+    },
+    "databricks": {
+      "serviceId": ""
+    },
+    "datadog": {
+      "serviceId": ""
+    },
+    "descope": {
+      "serviceId": ""
+    },
+    "digitalocean": {
+      "serviceId": ""
+    },
+    "doppler": {
+      "serviceId": ""
+    },
+    "exercism": {
+      "serviceId": ""
+    },
+    "expo": {
+      "serviceId": ""
+    },
+    "fastly": {
+      "serviceId": ""
+    },
+    "flyctl": {
+      "serviceId": ""
+    },
+    "fossa": {
+      "serviceId": ""
+    },
+    "gemini": {
+      "serviceId": ""
+    },
+    "gitea": {
+      "serviceId": ""
+    },
+    "github": {
+      "serviceId": ""
+    },
+    "gitlab": {
+      "serviceId": ""
+    },
+    "hcloud": {
+      "serviceId": ""
+    },
+    "heroku": {
+      "serviceId": ""
+    },
+    "homebrew": {
+      "serviceId": ""
+    },
+    "huggingface": {
+      "serviceId": ""
+    },
+    "influxdb": {
+      "serviceId": ""
+    },
+    "junie": {
+      "serviceId": ""
+    },
+    "kaggle": {
+      "serviceId": ""
+    },
+    "kiro": {
+      "serviceId": ""
+    },
+    "lacework": {
+      "serviceId": ""
+    },
+    "laravelforge": {
+      "serviceId": ""
+    },
+    "laravelvapor": {
+      "serviceId": ""
+    },
+    "linode": {
+      "serviceId": ""
+    },
+    "localstack": {
+      "serviceId": ""
+    },
+    "mysql": {
+      "serviceId": ""
+    },
+    "ngrok": {
+      "serviceId": ""
+    },
+    "npm": {
+      "serviceId": ""
+    },
+    "octopus": {
+      "serviceId": ""
+    },
+    "ohdear": {
+      "serviceId": ""
+    },
+    "okta": {
+      "serviceId": ""
+    },
+    "openai": {
+      "serviceId": "openai"
+    },
+    "opencode": {
+      "serviceId": ""
+    },
+    "pipedream": {
+      "serviceId": ""
+    },
+    "postgresql": {
+      "serviceId": ""
+    },
+    "pulumi": {
+      "serviceId": ""
+    },
+    "pypi": {
+      "serviceId": ""
+    },
+    "readme": {
+      "serviceId": ""
+    },
+    "redis": {
+      "serviceId": ""
+    },
+    "rediscloud": {
+      "serviceId": ""
+    },
+    "scaleway": {
+      "serviceId": ""
+    },
+    "sentry": {
+      "serviceId": ""
+    },
+    "snowflake": {
+      "serviceId": ""
+    },
+    "snyk": {
+      "serviceId": ""
+    },
+    "sourcegraph": {
+      "serviceId": ""
+    },
+    "stripe": {
+      "serviceId": ""
+    },
+    "terraform": {
+      "serviceId": ""
+    },
+    "todoist": {
+      "serviceId": ""
+    },
+    "tofu": {
+      "serviceId": ""
+    },
+    "treasuredata": {
+      "serviceId": ""
+    },
+    "tugboat": {
+      "serviceId": ""
+    },
+    "twilio": {
+      "serviceId": ""
+    },
+    "upcloud": {
+      "serviceId": ""
+    },
+    "upstash": {
+      "serviceId": ""
+    },
+    "vault": {
+      "serviceId": ""
+    },
+    "vercel": {
+      "serviceId": "vercel"
+    },
+    "vertica": {
+      "serviceId": ""
+    },
+    "vultr": {
+      "serviceId": ""
+    },
+    "wrangler": {
+      "serviceId": ""
+    },
+    "yugabytedb": {
+      "serviceId": ""
+    },
+    "zapier": {
+      "serviceId": ""
+    },
+    "zendesk": {
+      "serviceId": ""
+    }
+  }
+}

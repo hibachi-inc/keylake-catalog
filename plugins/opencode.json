@@ -1,0 +1,24 @@
+{
+  "name": "opencode",
+  "platform": "OpenCode",
+  "homepage": "https://opencode.ai",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "envVars": [
+        "OPENCODE_API_KEY"
+      ],
+      "docsUrl": "https://opencode.ai/docs/providers/",
+      "managementUrl": "https://opencode.ai/auth"
+    }
+  ],
+  "executables": [
+    {
+      "name": "OpenCode CLI",
+      "runs": [
+        "opencode"
+      ],
+      "docsUrl": "https://opencode.ai/docs/"
+    }
+  ]
+}

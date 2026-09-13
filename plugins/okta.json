@@ -1,0 +1,30 @@
+{
+  "name": "okta",
+  "platform": "Okta",
+  "homepage": "https://www.okta.com",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "length": 42,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "OKTA_CLIENT_ORGURL",
+        "OKTA_CLIENT_TOKEN"
+      ],
+      "docsUrl": "https://developer.okta.com/docs/guides/create-an-api-token/main/"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Okta CLI",
+      "runs": [
+        "okta"
+      ],
+      "docsUrl": "https://cli.okta.com"
+    }
+  ]
+}

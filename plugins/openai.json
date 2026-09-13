@@ -1,0 +1,52 @@
+{
+  "name": "openai",
+  "platform": "OpenAI",
+  "homepage": "https://openai.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "sk-",
+      "length": 51,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "OPENAI_API_KEY"
+      ],
+      "docsUrl": "https://platform.openai.com/docs",
+      "managementUrl": "https://platform.openai.com/account/api-keys"
+    }
+  ],
+  "executables": [
+    {
+      "name": "OpenAI Codex",
+      "runs": [
+        "codex"
+      ],
+      "docsUrl": "https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started"
+    },
+    {
+      "name": "OpenAI Evals CLI",
+      "runs": [
+        "oaieval"
+      ],
+      "docsUrl": "https://github.com/openai/evals/blob/main/docs/run-evals.md"
+    },
+    {
+      "name": "OpenAI Eval Set CLI",
+      "runs": [
+        "oaievalset"
+      ],
+      "docsUrl": "https://github.com/openai/evals/blob/main/docs/run-evals.md"
+    },
+    {
+      "name": "OpenAI CLI",
+      "runs": [
+        "openai"
+      ],
+      "docsUrl": "https://pypi.org/project/openai/"
+    }
+  ]
+}

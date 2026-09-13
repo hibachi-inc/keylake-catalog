@@ -1,0 +1,30 @@
+{
+  "name": "ohdear",
+  "platform": "Oh Dear",
+  "homepage": "https://ohdear.app",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "length": 40,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "OHDEAR_API_TOKEN"
+      ],
+      "docsUrl": "https://ohdear.app/docs/api/introduction#get-your-api-token",
+      "managementUrl": "https://ohdear.app/user/api-tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Oh Dear CLI",
+      "runs": [
+        "ohdear"
+      ],
+      "docsUrl": "https://ohdear.app/docs/integrations/our-cli-tool"
+    }
+  ]
+}

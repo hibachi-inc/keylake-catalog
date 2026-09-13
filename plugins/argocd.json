@@ -1,0 +1,29 @@
+{
+  "name": "argocd",
+  "platform": "Argo CD",
+  "homepage": "https://argo-cd.readthedocs.io/en/stable/",
+  "credentials": [
+    {
+      "name": "AuthToken",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "ARGOCD_AUTH_TOKEN",
+        "ARGOCD_SERVER"
+      ],
+      "docsUrl": "https://argo-cd.readthedocs.io/en/stable/user-guide/environment-variables/"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Argo CD CLI",
+      "runs": [
+        "argocd"
+      ],
+      "docsUrl": "https://argo-cd.readthedocs.io/en/stable/user-guide/commands/argocd/"
+    }
+  ]
+}

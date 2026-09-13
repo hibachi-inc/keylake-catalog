@@ -1,0 +1,28 @@
+{
+  "name": "pipedream",
+  "platform": "Pipedream",
+  "homepage": "https://pipedream.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 9,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true,
+        "symbols": true
+      },
+      "docsUrl": "https://pipedream.com/docs/api_key",
+      "managementUrl": "https://console.pipedream.com/user/security/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Pipedream CLI",
+      "runs": [
+        "pd"
+      ],
+      "docsUrl": "https://pipedream.com/docs/cli/reference/"
+    }
+  ]
+}

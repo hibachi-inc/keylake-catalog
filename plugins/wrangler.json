@@ -1,0 +1,31 @@
+{
+  "name": "wrangler",
+  "platform": "Cloudflare Workers",
+  "homepage": "https://workers.cloudflare.com",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "length": 37,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "CLOUDFLARE_ACCOUNT_ID",
+        "CLOUDFLARE_API_TOKEN"
+      ],
+      "docsUrl": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+      "managementUrl": "https://dash.cloudflare.com/profile/api-tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Cloudflare Workers CLI",
+      "runs": [
+        "wrangler"
+      ],
+      "docsUrl": "https://wrangler.com/docs/cli"
+    }
+  ]
+}

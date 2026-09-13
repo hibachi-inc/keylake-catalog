@@ -1,0 +1,26 @@
+{
+  "name": "confluent",
+  "platform": "Confluent",
+  "homepage": "https://confluent.io",
+  "credentials": [
+    {
+      "name": "UserLogin",
+      "envVars": [
+        "CONFLUENT_CLOUD_EMAIL",
+        "CONFLUENT_CLOUD_ORGANIZATION_ID",
+        "CONFLUENT_CLOUD_PASSWORD"
+      ],
+      "docsUrl": "https://docs.confluent.io/cloud/current/access-management/identity/user-accounts.html#local-user-username-password",
+      "managementUrl": "https://confluent.cloud"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Confluent CLI",
+      "runs": [
+        "confluent"
+      ],
+      "docsUrl": "https://docs.confluent.io/confluent-cli/current/overview.html"
+    }
+  ]
+}

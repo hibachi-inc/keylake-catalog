@@ -1,0 +1,66 @@
+{
+  "name": "aws",
+  "platform": "AWS",
+  "homepage": "https://aws.amazon.com/",
+  "credentials": [
+    {
+      "name": "AccessKey",
+      "prefix": "AKIA",
+      "length": 40,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "AMAZON_ACCESS_KEY_ID",
+        "AMAZON_SECRET_ACCESS_KEY",
+        "AWS_ACCESS_KEY",
+        "AWS_ACCESS_KEY_ID",
+        "AWS_ACCESS_SECRET",
+        "AWS_DEFAULT_REGION",
+        "AWS_SECRET_ACCESS_KEY",
+        "AWS_SECRET_KEY"
+      ],
+      "docsUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html",
+      "managementUrl": "https://console.aws.amazon.com/iam"
+    }
+  ],
+  "executables": [
+    {
+      "name": "AWS CLI",
+      "runs": [
+        "aws"
+      ],
+      "docsUrl": "https://aws.amazon.com/cli/"
+    },
+    {
+      "name": "awslogs",
+      "runs": [
+        "awslogs"
+      ],
+      "docsUrl": "https://github.com/jorgebastida/awslogs"
+    },
+    {
+      "name": "AWS CDK Toolkit",
+      "runs": [
+        "cdk"
+      ],
+      "docsUrl": "https://docs.aws.amazon.com/cdk/v2/guide/cli.html"
+    },
+    {
+      "name": "eksctl CLI",
+      "runs": [
+        "eksctl"
+      ],
+      "docsUrl": "https://eksctl.io/"
+    },
+    {
+      "name": "AWS SAM CLI",
+      "runs": [
+        "sam"
+      ],
+      "docsUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/reference-sam-cli.html"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "akamai",
+  "platform": "Akamai",
+  "homepage": "https://akamai.com",
+  "credentials": [
+    {
+      "name": "APIClientCredentials",
+      "length": 38,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "docsUrl": "https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials",
+      "managementUrl": "https://control.akamai.com/apps/identity-management/#/tabs/users/list"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Akamai CLI",
+      "runs": [
+        "akamai"
+      ],
+      "docsUrl": "https://techdocs.akamai.com/developer/docs/about-clis"
+    }
+  ]
+}

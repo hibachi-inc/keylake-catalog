@@ -1,0 +1,29 @@
+{
+  "name": "gitea",
+  "platform": "Gitea",
+  "homepage": "https://gitea.io/",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "prefix": "https://",
+      "length": 40,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true,
+        "symbols": true
+      },
+      "docsUrl": "https://docs.gitea.io/en-us/api-usage/#generating-and-listing-api-tokens",
+      "managementUrl": "https://gitea.com/user/settings/applications"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Gitea CLI",
+      "runs": [
+        "tea"
+      ],
+      "docsUrl": "https://gitea.com/gitea/tea/src/branch/main/README.md"
+    }
+  ]
+}

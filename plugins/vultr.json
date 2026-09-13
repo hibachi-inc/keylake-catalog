@@ -1,0 +1,29 @@
+{
+  "name": "vultr",
+  "platform": "Vultr",
+  "homepage": "https://vultr.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 36,
+      "charset": {
+        "uppercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "VULTR_API_KEY"
+      ],
+      "docsUrl": "https://www.vultr.com/api/#section/Authentication",
+      "managementUrl": "https://my.vultr.com/settings/#settingsapi"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Vultr CLI",
+      "runs": [
+        "vultr-cli"
+      ],
+      "docsUrl": "https://github.com/vultr/vultr-cli"
+    }
+  ]
+}

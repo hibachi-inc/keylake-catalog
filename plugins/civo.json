@@ -1,0 +1,30 @@
+{
+  "name": "civo",
+  "platform": "Civo",
+  "homepage": "https://www.civo.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 50,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "CIVO_TOKEN"
+      ],
+      "docsUrl": "https://www.civo.com/docs/account/api-keys",
+      "managementUrl": "https://dashboard.civo.com/security"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Civo CLI",
+      "runs": [
+        "civo"
+      ],
+      "docsUrl": "https://www.civo.com/docs/overview/civo-cli"
+    }
+  ]
+}

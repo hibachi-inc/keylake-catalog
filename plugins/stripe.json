@@ -1,0 +1,31 @@
+{
+  "name": "stripe",
+  "platform": "Stripe",
+  "homepage": "https://stripe.com",
+  "credentials": [
+    {
+      "name": "SecretKey",
+      "prefix": "sk_",
+      "length": 107,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "STRIPE_API_KEY"
+      ],
+      "docsUrl": "https://stripe.com/docs/keys",
+      "managementUrl": "https://dashboard.stripe.com/apikeys"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Stripe CLI",
+      "runs": [
+        "stripe"
+      ],
+      "docsUrl": "https://stripe.com/docs/cli"
+    }
+  ]
+}

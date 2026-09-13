@@ -1,0 +1,48 @@
+{
+  "name": "postgresql",
+  "platform": "PostgreSQL",
+  "homepage": "https://postgresql.org",
+  "credentials": [
+    {
+      "name": "DatabaseCredentials",
+      "envVars": [
+        "PGDATABASE",
+        "PGHOST",
+        "PGPASSWORD",
+        "PGPORT",
+        "PGUSER"
+      ],
+      "docsUrl": "https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-PARAMKEYWORDS"
+    }
+  ],
+  "executables": [
+    {
+      "name": "pg_dump",
+      "runs": [
+        "pg_dump"
+      ],
+      "docsUrl": "https://www.postgresql.org/docs/current/app-pgdump.html"
+    },
+    {
+      "name": "pg_restore",
+      "runs": [
+        "pg_restore"
+      ],
+      "docsUrl": "https://www.postgresql.org/docs/current/app-pgrestore.html"
+    },
+    {
+      "name": "pgcli",
+      "runs": [
+        "pgcli"
+      ],
+      "docsUrl": "https://pgcli.com/docs"
+    },
+    {
+      "name": "psql",
+      "runs": [
+        "psql"
+      ],
+      "docsUrl": "https://www.postgresql.org/docs/current/app-psql.html"
+    }
+  ]
+}

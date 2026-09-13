@@ -1,0 +1,26 @@
+{
+  "name": "redis",
+  "platform": "Redis",
+  "homepage": "https://redis.io/",
+  "credentials": [
+    {
+      "name": "UserCredentials",
+      "charset": {
+        "digits": true
+      },
+      "envVars": [
+        "REDISCLI_AUTH"
+      ],
+      "docsUrl": "https://redis.io/docs/ui/cli/#host-port-password-and-database"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Redis CLI",
+      "runs": [
+        "redis-cli"
+      ],
+      "docsUrl": "https://redis.io/docs/ui/cli"
+    }
+  ]
+}

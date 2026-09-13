@@ -1,0 +1,31 @@
+{
+  "name": "localstack",
+  "platform": "LocalStack",
+  "homepage": "https://localstack.cloud",
+  "credentials": [
+    {
+      "name": "AuthToken",
+      "prefix": "ls-",
+      "length": 39,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "LOCALSTACK_AUTH_TOKEN"
+      ],
+      "docsUrl": "https://docs.localstack.cloud/getting-started/auth-token/",
+      "managementUrl": "https://app.localstack.cloud/workspace/auth-token"
+    }
+  ],
+  "executables": [
+    {
+      "name": "LocalStack CLI",
+      "runs": [
+        "localstack"
+      ],
+      "docsUrl": "https://docs.localstack.cloud/getting-started/installation/#localstack-cli"
+    }
+  ]
+}

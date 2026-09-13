@@ -1,0 +1,17 @@
+{
+  "name": "npm",
+  "platform": "npm",
+  "homepage": "https://www.npmjs.com",
+  "credentials": [
+    {
+      "name": "AccessToken",
+      "docsUrl": "https://docs.npmjs.com/about-access-tokens",
+      "managementUrl": "https://www.npmjs.com/settings/~/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "readme",
+  "platform": "ReadMe",
+  "homepage": "https://readme.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "rdme_",
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "RDME_API_KEY",
+        "RDME_EMAIL",
+        "RDME_PROJECT"
+      ],
+      "docsUrl": "https://docs.readme.com/main/reference/intro/authentication"
+    }
+  ],
+  "executables": [
+    {
+      "name": "ReadMe CLI",
+      "runs": [
+        "rdme"
+      ],
+      "docsUrl": "https://docs.readme.com/main/docs/rdme"
+    }
+  ]
+}

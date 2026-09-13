@@ -1,0 +1,35 @@
+{
+  "name": "github",
+  "platform": "GitHub",
+  "homepage": "https://github.com",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "prefix": "ghp_",
+      "length": 40,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "GH_ENTERPRISE_TOKEN",
+        "GH_HOST",
+        "GH_TOKEN",
+        "GITHUB_ENTERPRISE_TOKEN",
+        "GITHUB_TOKEN"
+      ],
+      "docsUrl": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token",
+      "managementUrl": "https://github.com/settings/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "GitHub CLI",
+      "runs": [
+        "gh"
+      ],
+      "docsUrl": "https://cli.github.com"
+    }
+  ]
+}

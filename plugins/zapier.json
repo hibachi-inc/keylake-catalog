@@ -1,0 +1,29 @@
+{
+  "name": "zapier",
+  "platform": "Zapier",
+  "homepage": "https://zapier.com",
+  "credentials": [
+    {
+      "name": "DeployKey",
+      "length": 32,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "ZAPIER_DEPLOY_KEY"
+      ],
+      "docsUrl": "https://platform.zapier.com/cli_docs/docs#quick-setup-guide",
+      "managementUrl": "https://developer.zapier.com/partner-settings/deploy-keys/"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Zapier CLI",
+      "runs": [
+        "zapier"
+      ],
+      "docsUrl": "https://platform.zapier.com/cli_docs/docs"
+    }
+  ]
+}

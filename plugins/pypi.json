@@ -1,0 +1,41 @@
+{
+  "name": "pypi",
+  "platform": "PyPI",
+  "homepage": "https://pypi.org",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "prefix": "pypi-",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "docsUrl": "https://pypi.org/help/#apitoken",
+      "managementUrl": "https://pypi.org/manage/account/#api-tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Flit",
+      "runs": [
+        "flit"
+      ],
+      "docsUrl": "https://flit.pypa.io"
+    },
+    {
+      "name": "Hatch",
+      "runs": [
+        "hatch"
+      ],
+      "docsUrl": "https://hatch.pypa.io"
+    },
+    {
+      "name": "Twine",
+      "runs": [
+        "twine"
+      ],
+      "docsUrl": "https://twine.readthedocs.io"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "heroku",
+  "platform": "Heroku",
+  "homepage": "https://heroku.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 36,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "HEROKU_API_KEY"
+      ],
+      "docsUrl": "https://devcenter.heroku.com/articles/authentication",
+      "managementUrl": "https://dashboard.heroku.com/account"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Heroku CLI",
+      "runs": [
+        "heroku"
+      ],
+      "docsUrl": "https://devcenter.heroku.com/articles/heroku-cli"
+    }
+  ]
+}

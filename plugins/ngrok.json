@@ -1,0 +1,30 @@
+{
+  "name": "ngrok",
+  "platform": "ngrok",
+  "homepage": "https://ngrok.com",
+  "credentials": [
+    {
+      "name": "Credentials",
+      "length": 49,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "NGROK_API_KEY",
+        "NGROK_AUTHTOKEN"
+      ],
+      "docsUrl": "https://ngrok.com/docs/ngrok-agent/config"
+    }
+  ],
+  "executables": [
+    {
+      "name": "ngrok CLI",
+      "runs": [
+        "ngrok"
+      ],
+      "docsUrl": "https://ngrok.com/docs/ngrok-agent/ngrok"
+    }
+  ]
+}

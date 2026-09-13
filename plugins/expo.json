@@ -1,0 +1,31 @@
+{
+  "name": "expo",
+  "platform": "Expo",
+  "homepage": "https://expo.dev",
+  "credentials": [
+    {
+      "name": "AccessToken",
+      "envVars": [
+        "EXPO_TOKEN"
+      ],
+      "docsUrl": "https://docs.expo.dev/accounts/programmatic-access/",
+      "managementUrl": "https://expo.dev/accounts/[account]/settings/access-tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "EAS CLI",
+      "runs": [
+        "eas"
+      ],
+      "docsUrl": "https://docs.expo.dev/build/setup/"
+    },
+    {
+      "name": "Expo CLI",
+      "runs": [
+        "expo"
+      ],
+      "docsUrl": "https://docs.expo.dev/more/expo-cli/"
+    }
+  ]
+}

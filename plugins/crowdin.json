@@ -1,0 +1,33 @@
+{
+  "name": "crowdin",
+  "platform": "Crowdin",
+  "homepage": "https://crowdin.com",
+  "credentials": [
+    {
+      "name": "AccessToken",
+      "prefix": "https://",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true,
+        "symbols": true
+      },
+      "envVars": [
+        "CROWDIN_BASE_URL",
+        "CROWDIN_PERSONAL_TOKEN",
+        "CROWDIN_PROJECT_ID"
+      ],
+      "docsUrl": "https://developer.crowdin.com/configuration-file/#api-credentials-from-environment-variables",
+      "managementUrl": "https://crowdin.com/settings#api-key"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Crowdin CLI",
+      "runs": [
+        "crowdin"
+      ],
+      "docsUrl": "https://crowdin.github.io/crowdin-cli/"
+    }
+  ]
+}

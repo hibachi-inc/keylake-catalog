@@ -1,0 +1,29 @@
+{
+  "name": "treasuredata",
+  "platform": "Treasure Data",
+  "homepage": "https://www.treasuredata.com/",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "TD_API_KEY",
+        "TREASURE_DATA_API_KEY"
+      ],
+      "docsUrl": "https://docs.treasuredata.com/display/public/PD/Configuring+Authentication+for+TD+Using+the+TD+Toolbelt",
+      "managementUrl": "https://console.treasuredata.com/app/mp/ak"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Treasure Data Toolbelt",
+      "runs": [
+        "td"
+      ],
+      "docsUrl": "https://docs.treasuredata.com/display/public/PD/TD+Toolbelt"
+    }
+  ]
+}

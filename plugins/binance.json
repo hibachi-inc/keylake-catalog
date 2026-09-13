@@ -1,0 +1,31 @@
+{
+  "name": "binance",
+  "platform": "Binance",
+  "homepage": "https://binance.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 64,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "BINANCE_API_KEY",
+        "BINANCE_API_SECRET"
+      ],
+      "docsUrl": "https://github.com/binance/binance-cli",
+      "managementUrl": "https://www.binance.com/en/my/settings/api-management"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Binance CLI",
+      "runs": [
+        "binance-cli"
+      ],
+      "docsUrl": "https://github.com/binance/binance-cli"
+    }
+  ]
+}

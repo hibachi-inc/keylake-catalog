@@ -1,0 +1,31 @@
+{
+  "name": "axiom",
+  "platform": "Axiom",
+  "homepage": "https://axiom.co",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "length": 41,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "AXIOM_DEPLOYMENT",
+        "AXIOM_ORG_ID",
+        "AXIOM_TOKEN"
+      ],
+      "docsUrl": "https://axiom.co/docs/restapi/token#creating-personal-token",
+      "managementUrl": "https://app.axiom.co/settings/profile"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Axiom CLI",
+      "runs": [
+        "axiom"
+      ],
+      "docsUrl": "https://axiom.co/docs/reference/cli"
+    }
+  ]
+}

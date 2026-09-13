@@ -1,0 +1,30 @@
+{
+  "name": "tugboat",
+  "platform": "Tugboat",
+  "homepage": "https://tugboatqa.com",
+  "credentials": [
+    {
+      "name": "AccessToken",
+      "length": 32,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "TUGBOAT_API_TOKEN"
+      ],
+      "docsUrl": "https://docs.tugboatqa.com/tugboat-cli/set-an-access-token/",
+      "managementUrl": "https://dashboard.tugboatqa.com/access-tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Tugboat CLI",
+      "runs": [
+        "tugboat"
+      ],
+      "docsUrl": "https://docs.tugboatqa.com/tugboat-cli/"
+    }
+  ]
+}

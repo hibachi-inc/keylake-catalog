@@ -1,0 +1,29 @@
+{
+  "name": "linode",
+  "platform": "Linode",
+  "homepage": "https://linode.com",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "length": 64,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "LINODE_CLI_TOKEN"
+      ],
+      "docsUrl": "https://www.linode.com/docs/products/tools/cloud-manager/guides/cloud-api-keys/",
+      "managementUrl": "https://cloud.linode.com/profile/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Linode CLI",
+      "runs": [
+        "linode-cli"
+      ],
+      "docsUrl": "https://www.linode.com/docs/products/tools/cli/get-started/"
+    }
+  ]
+}

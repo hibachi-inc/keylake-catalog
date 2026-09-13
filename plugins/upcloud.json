@@ -1,0 +1,30 @@
+{
+  "name": "upcloud",
+  "platform": "UpCloud",
+  "homepage": "https://upcloud.com",
+  "credentials": [
+    {
+      "name": "UserLogin",
+      "length": 36,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "UPCLOUD_PASSWORD",
+        "UPCLOUD_USERNAME"
+      ],
+      "docsUrl": "https://upcloudltd.github.io/upcloud-cli/",
+      "managementUrl": "https://hub.upcloud.com/people/accounts"
+    }
+  ],
+  "executables": [
+    {
+      "name": "UpCloud CLI",
+      "runs": [
+        "upctl"
+      ],
+      "docsUrl": "https://upcloudltd.github.io/upcloud-cli/"
+    }
+  ]
+}

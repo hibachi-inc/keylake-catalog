@@ -1,0 +1,26 @@
+{
+  "name": "todoist",
+  "platform": "Todoist",
+  "homepage": "https://todoist.com",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "length": 40,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "docsUrl": "https://todoist.com/help/articles/8048880904476",
+      "managementUrl": "https://todoist.com/app/settings/integrations/developer"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Todoist CLI",
+      "runs": [
+        "todoist"
+      ],
+      "docsUrl": "https://github.com/sachaos/todoist"
+    }
+  ]
+}

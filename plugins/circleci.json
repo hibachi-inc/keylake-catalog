@@ -1,0 +1,29 @@
+{
+  "name": "circleci",
+  "platform": "CircleCI",
+  "homepage": "https://circleci.com",
+  "credentials": [
+    {
+      "name": "PersonalAPIToken",
+      "length": 40,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "CIRCLECI_CLI_TOKEN"
+      ],
+      "docsUrl": "https://circleci.com/docs/managing-api-tokens",
+      "managementUrl": "https://app.circleci.com/settings/user/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "CircleCI CLI",
+      "runs": [
+        "circleci"
+      ],
+      "docsUrl": "https://circleci.com/docs/local-cli/"
+    }
+  ]
+}

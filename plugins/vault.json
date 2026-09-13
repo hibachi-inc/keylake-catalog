@@ -1,0 +1,25 @@
+{
+  "name": "vault",
+  "platform": "HashiCorp Vault",
+  "homepage": "https://www.vaultproject.io",
+  "credentials": [
+    {
+      "name": "AuthToken",
+      "envVars": [
+        "VAULT_ADDR",
+        "VAULT_NAMESPACE",
+        "VAULT_TOKEN"
+      ],
+      "docsUrl": "https://developer.hashicorp.com/vault/docs/concepts/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Vault CLI",
+      "runs": [
+        "vault"
+      ],
+      "docsUrl": "https://developer.hashicorp.com/vault/docs/commands"
+    }
+  ]
+}

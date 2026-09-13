@@ -1,0 +1,30 @@
+{
+  "name": "digitalocean",
+  "platform": "DigitalOcean",
+  "homepage": "https://www.digitalocean.com",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "prefix": "dop_v1_",
+      "length": 71,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "DIGITALOCEAN_ACCESS_TOKEN"
+      ],
+      "docsUrl": "https://docs.digitalocean.com/reference/api/create-personal-access-token/",
+      "managementUrl": "https://cloud.digitalocean.com/account/api/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "DigitalOcean CLI",
+      "runs": [
+        "doctl"
+      ],
+      "docsUrl": "https://docs.digitalocean.com/reference/doctl"
+    }
+  ]
+}

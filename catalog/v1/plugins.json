@@ -1,0 +1,2419 @@
+{
+  "notes": "1Password shell-plugins の機械的JSON化。秘密値は含まない。NeedsAuthは関数値のため対象外。",
+  "plugins": [
+    {
+      "name": "akamai",
+      "platform": "Akamai",
+      "homepage": "https://akamai.com",
+      "credentials": [
+        {
+          "name": "APIClientCredentials",
+          "length": 38,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "docsUrl": "https://techdocs.akamai.com/developer/docs/set-up-authentication-credentials",
+          "managementUrl": "https://control.akamai.com/apps/identity-management/#/tabs/users/list"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Akamai CLI",
+          "runs": [
+            "akamai"
+          ],
+          "docsUrl": "https://techdocs.akamai.com/developer/docs/about-clis"
+        }
+      ]
+    },
+    {
+      "name": "anthropic",
+      "platform": "Anthropic",
+      "homepage": "https://anthropic.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "sk-ant-",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "envVars": [
+            "ANTHROPIC_API_KEY"
+          ],
+          "docsUrl": "https://docs.anthropic.com/en/home",
+          "managementUrl": "https://console.anthropic.com/settings/keys"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Claude Code",
+          "runs": [
+            "claude"
+          ],
+          "docsUrl": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview"
+        }
+      ]
+    },
+    {
+      "name": "argocd",
+      "platform": "Argo CD",
+      "homepage": "https://argo-cd.readthedocs.io/en/stable/",
+      "credentials": [
+        {
+          "name": "AuthToken",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "ARGOCD_AUTH_TOKEN",
+            "ARGOCD_SERVER"
+          ],
+          "docsUrl": "https://argo-cd.readthedocs.io/en/stable/user-guide/environment-variables/"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Argo CD CLI",
+          "runs": [
+            "argocd"
+          ],
+          "docsUrl": "https://argo-cd.readthedocs.io/en/stable/user-guide/commands/argocd/"
+        }
+      ]
+    },
+    {
+      "name": "atlas",
+      "platform": "MongoDB Atlas",
+      "homepage": "https://www.mongodb.com/",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 36,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "MONGODB_ATLAS_PRIVATE_API_KEY",
+            "MONGODB_ATLAS_PUBLIC_API_KEY"
+          ],
+          "docsUrl": "https://www.mongodb.com/docs/atlas/configure-api-access/"
+        }
+      ],
+      "executables": [
+        {
+          "name": "MongoDB Atlas CLI",
+          "runs": [
+            "atlas"
+          ],
+          "docsUrl": "https://www.mongodb.com/docs/atlas/cli/stable/"
+        }
+      ]
+    },
+    {
+      "name": "aws",
+      "platform": "AWS",
+      "homepage": "https://aws.amazon.com/",
+      "credentials": [
+        {
+          "name": "AccessKey",
+          "prefix": "AKIA",
+          "length": 40,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "AMAZON_ACCESS_KEY_ID",
+            "AMAZON_SECRET_ACCESS_KEY",
+            "AWS_ACCESS_KEY",
+            "AWS_ACCESS_KEY_ID",
+            "AWS_ACCESS_SECRET",
+            "AWS_DEFAULT_REGION",
+            "AWS_SECRET_ACCESS_KEY",
+            "AWS_SECRET_KEY"
+          ],
+          "docsUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html",
+          "managementUrl": "https://console.aws.amazon.com/iam"
+        }
+      ],
+      "executables": [
+        {
+          "name": "AWS CLI",
+          "runs": [
+            "aws"
+          ],
+          "docsUrl": "https://aws.amazon.com/cli/"
+        },
+        {
+          "name": "awslogs",
+          "runs": [
+            "awslogs"
+          ],
+          "docsUrl": "https://github.com/jorgebastida/awslogs"
+        },
+        {
+          "name": "AWS CDK Toolkit",
+          "runs": [
+            "cdk"
+          ],
+          "docsUrl": "https://docs.aws.amazon.com/cdk/v2/guide/cli.html"
+        },
+        {
+          "name": "eksctl CLI",
+          "runs": [
+            "eksctl"
+          ],
+          "docsUrl": "https://eksctl.io/"
+        },
+        {
+          "name": "AWS SAM CLI",
+          "runs": [
+            "sam"
+          ],
+          "docsUrl": "https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/reference-sam-cli.html"
+        }
+      ]
+    },
+    {
+      "name": "axiom",
+      "platform": "Axiom",
+      "homepage": "https://axiom.co",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "length": 41,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "AXIOM_DEPLOYMENT",
+            "AXIOM_ORG_ID",
+            "AXIOM_TOKEN"
+          ],
+          "docsUrl": "https://axiom.co/docs/restapi/token#creating-personal-token",
+          "managementUrl": "https://app.axiom.co/settings/profile"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Axiom CLI",
+          "runs": [
+            "axiom"
+          ],
+          "docsUrl": "https://axiom.co/docs/reference/cli"
+        }
+      ]
+    },
+    {
+      "name": "binance",
+      "platform": "Binance",
+      "homepage": "https://binance.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 64,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "BINANCE_API_KEY",
+            "BINANCE_API_SECRET"
+          ],
+          "docsUrl": "https://github.com/binance/binance-cli",
+          "managementUrl": "https://www.binance.com/en/my/settings/api-management"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Binance CLI",
+          "runs": [
+            "binance-cli"
+          ],
+          "docsUrl": "https://github.com/binance/binance-cli"
+        }
+      ]
+    },
+    {
+      "name": "cachix",
+      "platform": "Cachix",
+      "homepage": "https://www.cachix.org",
+      "credentials": [
+        {
+          "name": "AuthToken",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "CACHIX_AUTH_TOKEN"
+          ],
+          "docsUrl": "https://docs.cachix.org/getting-started#authenticating",
+          "managementUrl": "https://app.cachix.org/personal-auth-tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Cachix CLI",
+          "runs": [
+            "cachix"
+          ],
+          "docsUrl": "https://docs.cachix.org"
+        }
+      ]
+    },
+    {
+      "name": "cargo",
+      "platform": "Cargo",
+      "homepage": "https://crates.io",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "envVars": [
+            "CARGO_REGISTRY_TOKEN"
+          ],
+          "docsUrl": "https://doc.rust-lang.org/cargo/reference/config.html#credentials",
+          "managementUrl": "https://crates.io/settings/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Cargo CLI",
+          "runs": [
+            "cargo"
+          ],
+          "docsUrl": "https://doc.rust-lang.org/cargo/index.html"
+        }
+      ]
+    },
+    {
+      "name": "circleci",
+      "platform": "CircleCI",
+      "homepage": "https://circleci.com",
+      "credentials": [
+        {
+          "name": "PersonalAPIToken",
+          "length": 40,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "CIRCLECI_CLI_TOKEN"
+          ],
+          "docsUrl": "https://circleci.com/docs/managing-api-tokens",
+          "managementUrl": "https://app.circleci.com/settings/user/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "CircleCI CLI",
+          "runs": [
+            "circleci"
+          ],
+          "docsUrl": "https://circleci.com/docs/local-cli/"
+        }
+      ]
+    },
+    {
+      "name": "civo",
+      "platform": "Civo",
+      "homepage": "https://www.civo.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 50,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "CIVO_TOKEN"
+          ],
+          "docsUrl": "https://www.civo.com/docs/account/api-keys",
+          "managementUrl": "https://dashboard.civo.com/security"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Civo CLI",
+          "runs": [
+            "civo"
+          ],
+          "docsUrl": "https://www.civo.com/docs/overview/civo-cli"
+        }
+      ]
+    },
+    {
+      "name": "cline",
+      "platform": "Cline",
+      "homepage": "https://cline.bot",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "envVars": [
+            "CLINE_API_KEY"
+          ],
+          "docsUrl": "https://docs.cline.bot/api/authentication",
+          "managementUrl": "https://app.cline.bot"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Cline CLI",
+          "runs": [
+            "cline"
+          ],
+          "docsUrl": "https://docs.cline.bot"
+        }
+      ]
+    },
+    {
+      "name": "confluent",
+      "platform": "Confluent",
+      "homepage": "https://confluent.io",
+      "credentials": [
+        {
+          "name": "UserLogin",
+          "envVars": [
+            "CONFLUENT_CLOUD_EMAIL",
+            "CONFLUENT_CLOUD_ORGANIZATION_ID",
+            "CONFLUENT_CLOUD_PASSWORD"
+          ],
+          "docsUrl": "https://docs.confluent.io/cloud/current/access-management/identity/user-accounts.html#local-user-username-password",
+          "managementUrl": "https://confluent.cloud"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Confluent CLI",
+          "runs": [
+            "confluent"
+          ],
+          "docsUrl": "https://docs.confluent.io/confluent-cli/current/overview.html"
+        }
+      ]
+    },
+    {
+      "name": "copilot",
+      "platform": "GitHub Copilot",
+      "homepage": "https://github.com/features/copilot/cli",
+      "credentials": [
+        {
+          "name": "AuthToken",
+          "envVars": [
+            "COPILOT_GITHUB_TOKEN"
+          ],
+          "docsUrl": "https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli",
+          "managementUrl": "https://github.com/settings/personal-access-tokens/new"
+        }
+      ],
+      "executables": [
+        {
+          "name": "GitHub Copilot CLI",
+          "runs": [
+            "copilot"
+          ],
+          "docsUrl": "https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference"
+        }
+      ]
+    },
+    {
+      "name": "cratedb",
+      "platform": "CrateDB",
+      "homepage": "https://crate.io/",
+      "credentials": [
+        {
+          "name": "DatabaseCredentials",
+          "envVars": [
+            "CRATEPW"
+          ],
+          "docsUrl": "https://crate.io/docs/crate/crash/en/latest/run.html#environment-variables",
+          "managementUrl": "https://console.cratedb.cloud/account/settings"
+        }
+      ],
+      "executables": [
+        {
+          "name": "CrateDB Shell",
+          "runs": [
+            "crash"
+          ],
+          "docsUrl": "https://crate.io/docs/crate/crash/en/latest/"
+        }
+      ]
+    },
+    {
+      "name": "crowdin",
+      "platform": "Crowdin",
+      "homepage": "https://crowdin.com",
+      "credentials": [
+        {
+          "name": "AccessToken",
+          "prefix": "https://",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "envVars": [
+            "CROWDIN_BASE_URL",
+            "CROWDIN_PERSONAL_TOKEN",
+            "CROWDIN_PROJECT_ID"
+          ],
+          "docsUrl": "https://developer.crowdin.com/configuration-file/#api-credentials-from-environment-variables",
+          "managementUrl": "https://crowdin.com/settings#api-key"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Crowdin CLI",
+          "runs": [
+            "crowdin"
+          ],
+          "docsUrl": "https://crowdin.github.io/crowdin-cli/"
+        }
+      ]
+    },
+    {
+      "name": "cursor",
+      "platform": "Cursor",
+      "homepage": "https://cursor.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "crsr_",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "CURSOR_API_KEY"
+          ],
+          "docsUrl": "https://cursor.com/docs/cli/reference/authentication",
+          "managementUrl": "https://cursor.com/dashboard"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Cursor CLI",
+          "runs": [
+            "agent"
+          ],
+          "docsUrl": "https://cursor.com/docs/cli/overview"
+        }
+      ]
+    },
+    {
+      "name": "databricks",
+      "platform": "Databricks",
+      "homepage": "https://databricks.com",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "prefix": "https://",
+          "length": 38,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "DATABRICKS_HOST",
+            "DATABRICKS_TOKEN"
+          ],
+          "docsUrl": "https://docs.databricks.com/dev-tools/auth.html"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Databricks CLI",
+          "runs": [
+            "databricks"
+          ],
+          "docsUrl": "https://docs.databricks.com/dev-tools/cli/"
+        }
+      ]
+    },
+    {
+      "name": "datadog",
+      "platform": "Datadog",
+      "homepage": "https://datadoghq.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 40,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "DATADOG_API_KEY",
+            "DATADOG_APP_KEY"
+          ],
+          "docsUrl": "https://docs.datadoghq.com/account_management/api-app-keys/",
+          "managementUrl": "https://app.datadoghq.com/organization-settings/api-keys"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Dogshell",
+          "runs": [
+            "dog"
+          ],
+          "docsUrl": "https://docs.datadoghq.com/developers/guide/dogshell-quickly-use-datadog-s-api-from-terminal-shell/"
+        }
+      ]
+    },
+    {
+      "name": "descope",
+      "platform": "Descope",
+      "homepage": "https://descope.com",
+      "credentials": [
+        {
+          "name": "ManagementKey",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "DESCOPE_MANAGEMENT_KEY",
+            "DESCOPE_PROJECT_ID"
+          ],
+          "docsUrl": "https://docs.descope.com/cli/descope",
+          "managementUrl": "https://app.descope.com/settings/company/managementkeys"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Descope CLI",
+          "runs": [
+            "descope"
+          ],
+          "docsUrl": "https://docs.descope.com/cli/descope"
+        }
+      ]
+    },
+    {
+      "name": "digitalocean",
+      "platform": "DigitalOcean",
+      "homepage": "https://www.digitalocean.com",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "prefix": "dop_v1_",
+          "length": 71,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "DIGITALOCEAN_ACCESS_TOKEN"
+          ],
+          "docsUrl": "https://docs.digitalocean.com/reference/api/create-personal-access-token/",
+          "managementUrl": "https://cloud.digitalocean.com/account/api/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "DigitalOcean CLI",
+          "runs": [
+            "doctl"
+          ],
+          "docsUrl": "https://docs.digitalocean.com/reference/doctl"
+        }
+      ]
+    },
+    {
+      "name": "doppler",
+      "platform": "Doppler",
+      "homepage": "https://doppler.com",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "prefix": "dp.",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "DOPPLER_TOKEN"
+          ],
+          "docsUrl": "https://docs.doppler.com/docs/cli",
+          "managementUrl": "https://dashboard.doppler.com/"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Doppler CLI",
+          "runs": [
+            "doppler"
+          ],
+          "docsUrl": "https://docs.doppler.com/docs/cli"
+        }
+      ]
+    },
+    {
+      "name": "exercism",
+      "platform": "Exercism",
+      "homepage": "https://exercism.org",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 36,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "docsUrl": "https://exercism.org/docs/using/solving-exercises/working-locally",
+          "managementUrl": "https://exercism.org/settings/api_cli"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Exercism CLI",
+          "runs": [
+            "exercism"
+          ],
+          "docsUrl": "https://exercism.org/docs/using/solving-exercises/working-locally"
+        }
+      ]
+    },
+    {
+      "name": "expo",
+      "platform": "Expo",
+      "homepage": "https://expo.dev",
+      "credentials": [
+        {
+          "name": "AccessToken",
+          "envVars": [
+            "EXPO_TOKEN"
+          ],
+          "docsUrl": "https://docs.expo.dev/accounts/programmatic-access/",
+          "managementUrl": "https://expo.dev/accounts/[account]/settings/access-tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "EAS CLI",
+          "runs": [
+            "eas"
+          ],
+          "docsUrl": "https://docs.expo.dev/build/setup/"
+        },
+        {
+          "name": "Expo CLI",
+          "runs": [
+            "expo"
+          ],
+          "docsUrl": "https://docs.expo.dev/more/expo-cli/"
+        }
+      ]
+    },
+    {
+      "name": "fastly",
+      "platform": "Fastly",
+      "homepage": "https://fastly.com",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 32,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "FASTLY_API_TOKEN"
+          ],
+          "docsUrl": "https://docs.fastly.com/en/guides/using-api-tokens",
+          "managementUrl": "https://manage.fastly.com/account/personal/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Fastly CLI",
+          "runs": [
+            "fastly"
+          ],
+          "docsUrl": "https://developer.fastly.com/reference/cli/"
+        }
+      ]
+    },
+    {
+      "name": "flyctl",
+      "platform": "Fly.io",
+      "homepage": "https://fly.io",
+      "credentials": [
+        {
+          "name": "AccessToken",
+          "length": 43,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "envVars": [
+            "FLY_ACCESS_TOKEN"
+          ],
+          "docsUrl": "https://fly.io/docs/flyctl/auth-login/",
+          "managementUrl": "https://fly.io/user/personal_access_tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Fly",
+          "runs": [
+            "fly"
+          ],
+          "docsUrl": "https://fly.io/docs/flyctl/"
+        },
+        {
+          "name": "Flyctl",
+          "runs": [
+            "flyctl"
+          ],
+          "docsUrl": "https://fly.io/docs/flyctl/"
+        }
+      ]
+    },
+    {
+      "name": "fossa",
+      "platform": "FOSSA",
+      "homepage": "https://fossa.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 32,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "FOSSA_API_KEY"
+          ],
+          "docsUrl": "https://docs.fossa.com/docs/api-reference#api-tokens",
+          "managementUrl": "https://app.fossa.com/account/settings/integrations/api_tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "FOSSA CLI",
+          "runs": [
+            "fossa"
+          ],
+          "docsUrl": "https://github.com/fossas/fossa-cli"
+        }
+      ]
+    },
+    {
+      "name": "gemini",
+      "platform": "Google Gemini CLI",
+      "homepage": "https://geminicli.com/",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 39,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "GEMINI_API_KEY"
+          ],
+          "docsUrl": "https://ai.google.dev/gemini-api/docs/quickstart",
+          "managementUrl": "https://aistudio.google.com/app/apikey"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Google Gemini CLI",
+          "runs": [
+            "gemini"
+          ],
+          "docsUrl": "https://geminicli.com/"
+        }
+      ]
+    },
+    {
+      "name": "gitea",
+      "platform": "Gitea",
+      "homepage": "https://gitea.io/",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "prefix": "https://",
+          "length": 40,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "docsUrl": "https://docs.gitea.io/en-us/api-usage/#generating-and-listing-api-tokens",
+          "managementUrl": "https://gitea.com/user/settings/applications"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Gitea CLI",
+          "runs": [
+            "tea"
+          ],
+          "docsUrl": "https://gitea.com/gitea/tea/src/branch/main/README.md"
+        }
+      ]
+    },
+    {
+      "name": "github",
+      "platform": "GitHub",
+      "homepage": "https://github.com",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "prefix": "ghp_",
+          "length": 40,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "GH_ENTERPRISE_TOKEN",
+            "GH_HOST",
+            "GH_TOKEN",
+            "GITHUB_ENTERPRISE_TOKEN",
+            "GITHUB_TOKEN"
+          ],
+          "docsUrl": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token",
+          "managementUrl": "https://github.com/settings/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "GitHub CLI",
+          "runs": [
+            "gh"
+          ],
+          "docsUrl": "https://cli.github.com"
+        }
+      ]
+    },
+    {
+      "name": "gitlab",
+      "platform": "GitLab",
+      "homepage": "https://gitlab.com",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "prefix": "glpat-",
+          "length": 26,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "GITLAB_API_HOST",
+            "GITLAB_HOST",
+            "GITLAB_TOKEN"
+          ],
+          "docsUrl": "https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html",
+          "managementUrl": "https://gitlab.com/-/profile/personal_access_tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "GitLab CLI",
+          "runs": [
+            "glab"
+          ],
+          "docsUrl": "https://glab.readthedocs.io"
+        }
+      ]
+    },
+    {
+      "name": "hcloud",
+      "platform": "Hetzner Cloud",
+      "homepage": "https://console.hetzner.cloud",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 64,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "HCLOUD_TOKEN"
+          ],
+          "docsUrl": "https://github.com/hetznercloud/cli",
+          "managementUrl": "https://console.hetzner.cloud/projects"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Hetzner Cloud CLI",
+          "runs": [
+            "hcloud"
+          ],
+          "docsUrl": "https://github.com/hetznercloud/cli"
+        }
+      ]
+    },
+    {
+      "name": "heroku",
+      "platform": "Heroku",
+      "homepage": "https://heroku.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 36,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "HEROKU_API_KEY"
+          ],
+          "docsUrl": "https://devcenter.heroku.com/articles/authentication",
+          "managementUrl": "https://dashboard.heroku.com/account"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Heroku CLI",
+          "runs": [
+            "heroku"
+          ],
+          "docsUrl": "https://devcenter.heroku.com/articles/heroku-cli"
+        }
+      ]
+    },
+    {
+      "name": "homebrew",
+      "platform": "Homebrew",
+      "homepage": "https://brew.sh/",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "prefix": "ghp_",
+          "length": 40,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "HOMEBREW_GITHUB_API_TOKEN"
+          ],
+          "docsUrl": "https://docs.brew.sh/Manpage#environment",
+          "managementUrl": "https://github.com/settings/tokens/new?scopes=gist,repo,workflow\u0026description=Homebrew"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Homebrew CLI",
+          "runs": [
+            "brew"
+          ],
+          "docsUrl": "https://brew.sh/"
+        }
+      ]
+    },
+    {
+      "name": "huggingface",
+      "platform": "Hugging Face",
+      "homepage": "https://huggingface.co",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "prefix": "hf_",
+          "length": 37,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "envVars": [
+            "HF_ENDPOINT",
+            "HF_INFERENCE_ENDPOINT",
+            "HUGGING_FACE_HUB_TOKEN"
+          ],
+          "docsUrl": "https://huggingface.co/docs/hub/security-tokens",
+          "managementUrl": "https://huggingface.co/settings/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "HuggingFace CLI",
+          "runs": [
+            "huggingface-cli"
+          ],
+          "docsUrl": "https://huggingface.co/docs/huggingface_hub/quick-start"
+        }
+      ]
+    },
+    {
+      "name": "influxdb",
+      "platform": "InfluxDB",
+      "homepage": "https://www.influxdata.com/",
+      "credentials": [
+        {
+          "name": "DatabaseCredentials",
+          "envVars": [
+            "INFLUX_HOST",
+            "INFLUX_ORG",
+            "INFLUX_TOKEN"
+          ],
+          "docsUrl": "https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/config/"
+        }
+      ],
+      "executables": [
+        {
+          "name": "InfluxDB CLI",
+          "runs": [
+            "influx"
+          ],
+          "docsUrl": "https://docs.influxdata.com/influxdb/cloud/tools/influx-cli/"
+        }
+      ]
+    },
+    {
+      "name": "junie",
+      "platform": "JetBrains Junie",
+      "homepage": "https://junie.jetbrains.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "envVars": [
+            "JUNIE_API_KEY"
+          ],
+          "docsUrl": "https://junie.jetbrains.com/docs/environment-variables.html",
+          "managementUrl": "https://junie.jetbrains.com/cli"
+        }
+      ],
+      "executables": [
+        {
+          "name": "JetBrains Junie CLI",
+          "runs": [
+            "junie"
+          ],
+          "docsUrl": "https://junie.jetbrains.com/docs/junie-cli-usage.html"
+        }
+      ]
+    },
+    {
+      "name": "kaggle",
+      "platform": "Kaggle",
+      "homepage": "https://kaggle.com",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 32,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "KAGGLE_KEY",
+            "KAGGLE_USERNAME"
+          ],
+          "docsUrl": "https://www.kaggle.com/docs/api",
+          "managementUrl": "https://www.kaggle.com/settings/account"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Kaggle CLI",
+          "runs": [
+            "kaggle"
+          ],
+          "docsUrl": "https://github.com/Kaggle/kaggle-api"
+        }
+      ]
+    },
+    {
+      "name": "kiro",
+      "platform": "Kiro",
+      "homepage": "https://kiro.dev",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "ksk_",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "KIRO_API_KEY"
+          ],
+          "docsUrl": "https://kiro.dev/docs/cli/authentication/",
+          "managementUrl": "https://app.kiro.dev"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Kiro CLI",
+          "runs": [
+            "kiro-cli"
+          ],
+          "docsUrl": "https://kiro.dev/docs/cli/"
+        }
+      ]
+    },
+    {
+      "name": "lacework",
+      "platform": "Lacework",
+      "homepage": "https://www.lacework.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "_",
+          "length": 33,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "LW_ACCOUNT",
+            "LW_API_KEY",
+            "LW_API_SECRET"
+          ],
+          "docsUrl": "https://docs.lacework.com/console/api-access-keys",
+          "managementUrl": "https://login.lacework.net/ui?redirectUrl=/investigation/settings/apikeys"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Lacework CLI",
+          "runs": [
+            "lacework"
+          ],
+          "docsUrl": "https://docs.lacework.com/cli/"
+        }
+      ]
+    },
+    {
+      "name": "laravelforge",
+      "platform": "Laravel Forge",
+      "homepage": "https://forge.laravel.com/",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 987,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "FORGE_API_TOKEN"
+          ],
+          "docsUrl": "https://forge.laravel.com/docs/1.0/accounts/api.html",
+          "managementUrl": "https://forge.laravel.com/user-profile/api"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Laravel Forge CLI",
+          "runs": [
+            "forge"
+          ],
+          "docsUrl": "https://forge.laravel.com/docs/1.0/cli.html"
+        }
+      ]
+    },
+    {
+      "name": "laravelvapor",
+      "platform": "Laravel Vapor",
+      "homepage": "https://vapor.laravel.com",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "envVars": [
+            "VAPOR_API_TOKEN"
+          ],
+          "docsUrl": "https://docs.vapor.build/1.0/introduction.html",
+          "managementUrl": "https://vapor.laravel.com/app/account/api-tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Laravel Vapor CLI",
+          "runs": [
+            "vapor"
+          ],
+          "docsUrl": "https://docs.vapor.build/1.0/introduction.html#installing-the-vapor-cli"
+        }
+      ]
+    },
+    {
+      "name": "linode",
+      "platform": "Linode",
+      "homepage": "https://linode.com",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "length": 64,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "LINODE_CLI_TOKEN"
+          ],
+          "docsUrl": "https://www.linode.com/docs/products/tools/cloud-manager/guides/cloud-api-keys/",
+          "managementUrl": "https://cloud.linode.com/profile/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Linode CLI",
+          "runs": [
+            "linode-cli"
+          ],
+          "docsUrl": "https://www.linode.com/docs/products/tools/cli/get-started/"
+        }
+      ]
+    },
+    {
+      "name": "localstack",
+      "platform": "LocalStack",
+      "homepage": "https://localstack.cloud",
+      "credentials": [
+        {
+          "name": "AuthToken",
+          "prefix": "ls-",
+          "length": 39,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "LOCALSTACK_AUTH_TOKEN"
+          ],
+          "docsUrl": "https://docs.localstack.cloud/getting-started/auth-token/",
+          "managementUrl": "https://app.localstack.cloud/workspace/auth-token"
+        }
+      ],
+      "executables": [
+        {
+          "name": "LocalStack CLI",
+          "runs": [
+            "localstack"
+          ],
+          "docsUrl": "https://docs.localstack.cloud/getting-started/installation/#localstack-cli"
+        }
+      ]
+    },
+    {
+      "name": "mysql",
+      "platform": "MySQL",
+      "homepage": "https://mysql.com",
+      "credentials": [
+        {
+          "name": "DatabaseCredentials",
+          "docsUrl": "https://dev.mysql.com/doc/refman/en/connecting.html"
+        }
+      ],
+      "executables": [
+        {
+          "name": "mysql",
+          "runs": [
+            "mysql"
+          ],
+          "docsUrl": "https://dev.mysql.com/doc/refman/en/mysql.html"
+        }
+      ]
+    },
+    {
+      "name": "ngrok",
+      "platform": "ngrok",
+      "homepage": "https://ngrok.com",
+      "credentials": [
+        {
+          "name": "Credentials",
+          "length": 49,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "NGROK_API_KEY",
+            "NGROK_AUTHTOKEN"
+          ],
+          "docsUrl": "https://ngrok.com/docs/ngrok-agent/config"
+        }
+      ],
+      "executables": [
+        {
+          "name": "ngrok CLI",
+          "runs": [
+            "ngrok"
+          ],
+          "docsUrl": "https://ngrok.com/docs/ngrok-agent/ngrok"
+        }
+      ]
+    },
+    {
+      "name": "npm",
+      "platform": "npm",
+      "homepage": "https://www.npmjs.com",
+      "credentials": [
+        {
+          "name": "AccessToken",
+          "docsUrl": "https://docs.npmjs.com/about-access-tokens",
+          "managementUrl": "https://www.npmjs.com/settings/~/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": ""
+        }
+      ]
+    },
+    {
+      "name": "octopus",
+      "platform": "Octopus Deploy",
+      "homepage": "https://octopus.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "API-",
+          "charset": {
+            "uppercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "OCTOPUS_API_KEY",
+            "OCTOPUS_SPACE",
+            "OCTOPUS_URL"
+          ],
+          "docsUrl": "https://octopus.com/docs/octopus-rest-api/how-to-create-an-api-key"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Octopus CLI",
+          "runs": [
+            "octopus"
+          ],
+          "docsUrl": "https://octopus.com/docs/octopus-rest-api/cli"
+        }
+      ]
+    },
+    {
+      "name": "ohdear",
+      "platform": "Oh Dear",
+      "homepage": "https://ohdear.app",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 40,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "OHDEAR_API_TOKEN"
+          ],
+          "docsUrl": "https://ohdear.app/docs/api/introduction#get-your-api-token",
+          "managementUrl": "https://ohdear.app/user/api-tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Oh Dear CLI",
+          "runs": [
+            "ohdear"
+          ],
+          "docsUrl": "https://ohdear.app/docs/integrations/our-cli-tool"
+        }
+      ]
+    },
+    {
+      "name": "okta",
+      "platform": "Okta",
+      "homepage": "https://www.okta.com",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 42,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "OKTA_CLIENT_ORGURL",
+            "OKTA_CLIENT_TOKEN"
+          ],
+          "docsUrl": "https://developer.okta.com/docs/guides/create-an-api-token/main/"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Okta CLI",
+          "runs": [
+            "okta"
+          ],
+          "docsUrl": "https://cli.okta.com"
+        }
+      ]
+    },
+    {
+      "name": "openai",
+      "platform": "OpenAI",
+      "homepage": "https://openai.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "sk-",
+          "length": 51,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "OPENAI_API_KEY"
+          ],
+          "docsUrl": "https://platform.openai.com/docs",
+          "managementUrl": "https://platform.openai.com/account/api-keys"
+        }
+      ],
+      "executables": [
+        {
+          "name": "OpenAI Codex",
+          "runs": [
+            "codex"
+          ],
+          "docsUrl": "https://help.openai.com/en/articles/11096431-openai-codex-cli-getting-started"
+        },
+        {
+          "name": "OpenAI Evals CLI",
+          "runs": [
+            "oaieval"
+          ],
+          "docsUrl": "https://github.com/openai/evals/blob/main/docs/run-evals.md"
+        },
+        {
+          "name": "OpenAI Eval Set CLI",
+          "runs": [
+            "oaievalset"
+          ],
+          "docsUrl": "https://github.com/openai/evals/blob/main/docs/run-evals.md"
+        },
+        {
+          "name": "OpenAI CLI",
+          "runs": [
+            "openai"
+          ],
+          "docsUrl": "https://pypi.org/project/openai/"
+        }
+      ]
+    },
+    {
+      "name": "opencode",
+      "platform": "OpenCode",
+      "homepage": "https://opencode.ai",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "envVars": [
+            "OPENCODE_API_KEY"
+          ],
+          "docsUrl": "https://opencode.ai/docs/providers/",
+          "managementUrl": "https://opencode.ai/auth"
+        }
+      ],
+      "executables": [
+        {
+          "name": "OpenCode CLI",
+          "runs": [
+            "opencode"
+          ],
+          "docsUrl": "https://opencode.ai/docs/"
+        }
+      ]
+    },
+    {
+      "name": "pipedream",
+      "platform": "Pipedream",
+      "homepage": "https://pipedream.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 9,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "docsUrl": "https://pipedream.com/docs/api_key",
+          "managementUrl": "https://console.pipedream.com/user/security/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Pipedream CLI",
+          "runs": [
+            "pd"
+          ],
+          "docsUrl": "https://pipedream.com/docs/cli/reference/"
+        }
+      ]
+    },
+    {
+      "name": "postgresql",
+      "platform": "PostgreSQL",
+      "homepage": "https://postgresql.org",
+      "credentials": [
+        {
+          "name": "DatabaseCredentials",
+          "envVars": [
+            "PGDATABASE",
+            "PGHOST",
+            "PGPASSWORD",
+            "PGPORT",
+            "PGUSER"
+          ],
+          "docsUrl": "https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-PARAMKEYWORDS"
+        }
+      ],
+      "executables": [
+        {
+          "name": "pg_dump",
+          "runs": [
+            "pg_dump"
+          ],
+          "docsUrl": "https://www.postgresql.org/docs/current/app-pgdump.html"
+        },
+        {
+          "name": "pg_restore",
+          "runs": [
+            "pg_restore"
+          ],
+          "docsUrl": "https://www.postgresql.org/docs/current/app-pgrestore.html"
+        },
+        {
+          "name": "pgcli",
+          "runs": [
+            "pgcli"
+          ],
+          "docsUrl": "https://pgcli.com/docs"
+        },
+        {
+          "name": "psql",
+          "runs": [
+            "psql"
+          ],
+          "docsUrl": "https://www.postgresql.org/docs/current/app-psql.html"
+        }
+      ]
+    },
+    {
+      "name": "pulumi",
+      "platform": "Pulumi",
+      "homepage": "https://www.pulumi.com",
+      "credentials": [
+        {
+          "name": "PersonalAccessToken",
+          "prefix": "pul-",
+          "length": 44,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "PULUMI_ACCESS_TOKEN",
+            "PULUMI_BACKEND_URL"
+          ],
+          "docsUrl": "https://www.pulumi.com/docs/intro/pulumi-service/accounts/",
+          "managementUrl": "https://app.pulumi.com/account/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Pulumi CLI",
+          "runs": [
+            "pulumi"
+          ],
+          "docsUrl": "https://www.pulumi.com/docs/reference/cli/"
+        }
+      ]
+    },
+    {
+      "name": "pypi",
+      "platform": "PyPI",
+      "homepage": "https://pypi.org",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "prefix": "pypi-",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "docsUrl": "https://pypi.org/help/#apitoken",
+          "managementUrl": "https://pypi.org/manage/account/#api-tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Flit",
+          "runs": [
+            "flit"
+          ],
+          "docsUrl": "https://flit.pypa.io"
+        },
+        {
+          "name": "Hatch",
+          "runs": [
+            "hatch"
+          ],
+          "docsUrl": "https://hatch.pypa.io"
+        },
+        {
+          "name": "Twine",
+          "runs": [
+            "twine"
+          ],
+          "docsUrl": "https://twine.readthedocs.io"
+        }
+      ]
+    },
+    {
+      "name": "readme",
+      "platform": "ReadMe",
+      "homepage": "https://readme.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "rdme_",
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "RDME_API_KEY",
+            "RDME_EMAIL",
+            "RDME_PROJECT"
+          ],
+          "docsUrl": "https://docs.readme.com/main/reference/intro/authentication"
+        }
+      ],
+      "executables": [
+        {
+          "name": "ReadMe CLI",
+          "runs": [
+            "rdme"
+          ],
+          "docsUrl": "https://docs.readme.com/main/docs/rdme"
+        }
+      ]
+    },
+    {
+      "name": "redis",
+      "platform": "Redis",
+      "homepage": "https://redis.io/",
+      "credentials": [
+        {
+          "name": "UserCredentials",
+          "charset": {
+            "digits": true
+          },
+          "envVars": [
+            "REDISCLI_AUTH"
+          ],
+          "docsUrl": "https://redis.io/docs/ui/cli/#host-port-password-and-database"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Redis CLI",
+          "runs": [
+            "redis-cli"
+          ],
+          "docsUrl": "https://redis.io/docs/ui/cli"
+        }
+      ]
+    },
+    {
+      "name": "rediscloud",
+      "platform": "Redis Cloud",
+      "homepage": "https://redis.com/redis-enterprise-cloud/overview/",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "REDISCLOUD_ACCESS_KEY",
+            "REDISCLOUD_SECRET_KEY"
+          ],
+          "docsUrl": "https://docs.redis.com/latest/rc/api/get-started/manage-api-keys/",
+          "managementUrl": "https://app.redislabs.com/#/access-management/api-keys"
+        }
+      ]
+    },
+    {
+      "name": "scaleway",
+      "platform": "Scaleway",
+      "homepage": "https://scaleway.com",
+      "credentials": [
+        {
+          "name": "AccessKey",
+          "length": 36,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "SCW_ACCESS_KEY",
+            "SCW_DEFAULT_ORGANIZATION_ID",
+            "SCW_DEFAULT_PROJECT_ID",
+            "SCW_DEFAULT_REGION",
+            "SCW_DEFAULT_ZONE",
+            "SCW_SECRET_KEY"
+          ],
+          "docsUrl": "https://www.scaleway.com/en/docs/iam/how-to/create-api-keys/",
+          "managementUrl": "https://console.scaleway.com/iam/api-keys"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Scaleway CLI",
+          "runs": [
+            "scw"
+          ],
+          "docsUrl": "https://www.scaleway.com/en/cli/"
+        }
+      ]
+    },
+    {
+      "name": "sentry",
+      "platform": "Sentry",
+      "homepage": "https://sentry.io",
+      "credentials": [
+        {
+          "name": "AuthToken",
+          "length": 64,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "SENTRY_AUTH_TOKEN",
+            "SENTRY_ORG",
+            "SENTRY_PROJECT",
+            "SENTRY_URL"
+          ],
+          "docsUrl": "https://docs.sentry.io/api/auth/",
+          "managementUrl": "https://sentry.io/settings/account/api/auth-tokens/"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Sentry CLI",
+          "runs": [
+            "sentry-cli"
+          ],
+          "docsUrl": "https://docs.sentry.io/product/cli/"
+        }
+      ]
+    },
+    {
+      "name": "snowflake",
+      "platform": "Snowflake",
+      "homepage": "https://snowflake.com",
+      "credentials": [
+        {
+          "name": "LoginDetails",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "envVars": [
+            "SNOWSQL_ACCOUNT",
+            "SNOWSQL_PWD",
+            "SNOWSQL_USER"
+          ],
+          "docsUrl": "https://docs.snowflake.com/en/user-guide/admin-user-management.html#creating-users"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Snowflake CLI",
+          "runs": [
+            "snowsql"
+          ],
+          "docsUrl": "https://docs.snowflake.com/en/user-guide/snowsql.html"
+        }
+      ]
+    },
+    {
+      "name": "snyk",
+      "platform": "Snyk",
+      "homepage": "https://snyk.io",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 36,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "SNYK_TOKEN"
+          ],
+          "docsUrl": "https://docs.snyk.io/snyk-api-info/authentication-for-api",
+          "managementUrl": "https://app.snyk.io/account"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Snyk CLI",
+          "runs": [
+            "snyk"
+          ],
+          "docsUrl": "https://docs.snyk.io/snyk-cli"
+        }
+      ]
+    },
+    {
+      "name": "sourcegraph",
+      "platform": "Sourcegraph",
+      "homepage": "https://sourcegraph.com",
+      "credentials": [
+        {
+          "name": "AccessToken",
+          "prefix": "https://",
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "SRC_ACCESS_TOKEN",
+            "SRC_ENDPOINT"
+          ],
+          "docsUrl": "https://sourcegraph.com/docs/cli",
+          "managementUrl": "https://sourcegraph.com/settings/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Sourcegraph CLI",
+          "runs": [
+            "src"
+          ],
+          "docsUrl": "https://sourcegraph.com/docs/cli"
+        }
+      ]
+    },
+    {
+      "name": "stripe",
+      "platform": "Stripe",
+      "homepage": "https://stripe.com",
+      "credentials": [
+        {
+          "name": "SecretKey",
+          "prefix": "sk_",
+          "length": 107,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "STRIPE_API_KEY"
+          ],
+          "docsUrl": "https://stripe.com/docs/keys",
+          "managementUrl": "https://dashboard.stripe.com/apikeys"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Stripe CLI",
+          "runs": [
+            "stripe"
+          ],
+          "docsUrl": "https://stripe.com/docs/cli"
+        }
+      ]
+    },
+    {
+      "name": "terraform",
+      "platform": "Terraform",
+      "homepage": "https://www.terraform.io",
+      "executables": [
+        {
+          "name": "Terraform CLI",
+          "runs": [
+            "terraform"
+          ],
+          "docsUrl": "https://developer.hashicorp.com/terraform/cli"
+        }
+      ]
+    },
+    {
+      "name": "todoist",
+      "platform": "Todoist",
+      "homepage": "https://todoist.com",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 40,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "docsUrl": "https://todoist.com/help/articles/8048880904476",
+          "managementUrl": "https://todoist.com/app/settings/integrations/developer"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Todoist CLI",
+          "runs": [
+            "todoist"
+          ],
+          "docsUrl": "https://github.com/sachaos/todoist"
+        }
+      ]
+    },
+    {
+      "name": "tofu",
+      "platform": "OpenTofu",
+      "homepage": "https://opentofu.org",
+      "executables": [
+        {
+          "name": "OpenTofu",
+          "runs": [
+            "tofu"
+          ],
+          "docsUrl": "https://opentofu.org/docs/cli"
+        }
+      ]
+    },
+    {
+      "name": "treasuredata",
+      "platform": "Treasure Data",
+      "homepage": "https://www.treasuredata.com/",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "TD_API_KEY",
+            "TREASURE_DATA_API_KEY"
+          ],
+          "docsUrl": "https://docs.treasuredata.com/display/public/PD/Configuring+Authentication+for+TD+Using+the+TD+Toolbelt",
+          "managementUrl": "https://console.treasuredata.com/app/mp/ak"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Treasure Data Toolbelt",
+          "runs": [
+            "td"
+          ],
+          "docsUrl": "https://docs.treasuredata.com/display/public/PD/TD+Toolbelt"
+        }
+      ]
+    },
+    {
+      "name": "tugboat",
+      "platform": "Tugboat",
+      "homepage": "https://tugboatqa.com",
+      "credentials": [
+        {
+          "name": "AccessToken",
+          "length": 32,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "TUGBOAT_API_TOKEN"
+          ],
+          "docsUrl": "https://docs.tugboatqa.com/tugboat-cli/set-an-access-token/",
+          "managementUrl": "https://dashboard.tugboatqa.com/access-tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Tugboat CLI",
+          "runs": [
+            "tugboat"
+          ],
+          "docsUrl": "https://docs.tugboatqa.com/tugboat-cli/"
+        }
+      ]
+    },
+    {
+      "name": "twilio",
+      "platform": "Twilio",
+      "homepage": "https://twilio.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "AC",
+          "length": 32,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "TWILIO_ACCOUNT_SID",
+            "TWILIO_API_KEY",
+            "TWILIO_API_SECRET"
+          ],
+          "docsUrl": "https://www.twilio.com/docs/glossary/what-is-an-api-key",
+          "managementUrl": "https://www.twilio.com/console/project/api-keys"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Twilio CLI",
+          "runs": [
+            "twilio"
+          ],
+          "docsUrl": "https://twilio.com/docs/cli"
+        }
+      ]
+    },
+    {
+      "name": "upcloud",
+      "platform": "UpCloud",
+      "homepage": "https://upcloud.com",
+      "credentials": [
+        {
+          "name": "UserLogin",
+          "length": 36,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "UPCLOUD_PASSWORD",
+            "UPCLOUD_USERNAME"
+          ],
+          "docsUrl": "https://upcloudltd.github.io/upcloud-cli/",
+          "managementUrl": "https://hub.upcloud.com/people/accounts"
+        }
+      ],
+      "executables": [
+        {
+          "name": "UpCloud CLI",
+          "runs": [
+            "upctl"
+          ],
+          "docsUrl": "https://upcloudltd.github.io/upcloud-cli/"
+        }
+      ]
+    },
+    {
+      "name": "upstash",
+      "platform": "Upstash",
+      "homepage": "https://upstash.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 36,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "envVars": [
+            "UPSTASH_API_KEY",
+            "UPSTASH_EMAIL"
+          ],
+          "docsUrl": "https://docs.upstash.com/redis/account/developerapi#create-an-api-key",
+          "managementUrl": "https://console.upstash.com/account/api"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Upstash CLI",
+          "runs": [
+            "upstash"
+          ],
+          "docsUrl": "https://github.com/upstash/cli"
+        }
+      ]
+    },
+    {
+      "name": "vault",
+      "platform": "HashiCorp Vault",
+      "homepage": "https://www.vaultproject.io",
+      "credentials": [
+        {
+          "name": "AuthToken",
+          "envVars": [
+            "VAULT_ADDR",
+            "VAULT_NAMESPACE",
+            "VAULT_TOKEN"
+          ],
+          "docsUrl": "https://developer.hashicorp.com/vault/docs/concepts/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Vault CLI",
+          "runs": [
+            "vault"
+          ],
+          "docsUrl": "https://developer.hashicorp.com/vault/docs/commands"
+        }
+      ]
+    },
+    {
+      "name": "vercel",
+      "platform": "Vercel",
+      "homepage": "https://vercel.com",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 24,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "docsUrl": "https://vercel.com/docs/rest-api#authentication",
+          "managementUrl": "https://vercel.com/account/tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Vercel CLI",
+          "runs": [
+            "vercel"
+          ],
+          "docsUrl": "https://vercel.com/docs/cli"
+        }
+      ]
+    },
+    {
+      "name": "vertica",
+      "platform": "Vertica",
+      "homepage": "https://www.vertica.com/",
+      "credentials": [
+        {
+          "name": "DatabaseCredentials",
+          "envVars": [
+            "VSQL_DATABASE",
+            "VSQL_HOST",
+            "VSQL_PASSWORD",
+            "VSQL_PORT",
+            "VSQL_USER"
+          ],
+          "docsUrl": "https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/AdministratorsGuide/DBUsersAndPrivileges/Users/CreatingADatabaseUser.htm"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Vertica CLI",
+          "runs": [
+            "vsql"
+          ],
+          "docsUrl": "https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/vsql/UsingVsql.htm"
+        }
+      ]
+    },
+    {
+      "name": "vultr",
+      "platform": "Vultr",
+      "homepage": "https://vultr.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "length": 36,
+          "charset": {
+            "uppercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "VULTR_API_KEY"
+          ],
+          "docsUrl": "https://www.vultr.com/api/#section/Authentication",
+          "managementUrl": "https://my.vultr.com/settings/#settingsapi"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Vultr CLI",
+          "runs": [
+            "vultr-cli"
+          ],
+          "docsUrl": "https://github.com/vultr/vultr-cli"
+        }
+      ]
+    },
+    {
+      "name": "wrangler",
+      "platform": "Cloudflare Workers",
+      "homepage": "https://workers.cloudflare.com",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 37,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "CLOUDFLARE_ACCOUNT_ID",
+            "CLOUDFLARE_API_TOKEN"
+          ],
+          "docsUrl": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+          "managementUrl": "https://dash.cloudflare.com/profile/api-tokens"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Cloudflare Workers CLI",
+          "runs": [
+            "wrangler"
+          ],
+          "docsUrl": "https://wrangler.com/docs/cli"
+        }
+      ]
+    },
+    {
+      "name": "yugabytedb",
+      "platform": "YugabyteDB",
+      "homepage": "https://yugabyte.com",
+      "credentials": [
+        {
+          "name": "DatabaseCredentials",
+          "envVars": [
+            "PGDATABASE",
+            "PGHOST",
+            "PGPASSWORD",
+            "PGPORT",
+            "PGUSER"
+          ],
+          "docsUrl": "https://docs.yugabyte.com/preview/admin/ysqlsh/#connect-to-a-database",
+          "managementUrl": "https://cloud.yugabyte.com/clusters"
+        }
+      ],
+      "executables": [
+        {
+          "name": "YugabyteDB SQL Shell",
+          "runs": [
+            "ysqlsh"
+          ],
+          "docsUrl": "https://docs.yugabyte.com/preview/admin/ysqlsh/"
+        }
+      ]
+    },
+    {
+      "name": "zapier",
+      "platform": "Zapier",
+      "homepage": "https://zapier.com",
+      "credentials": [
+        {
+          "name": "DeployKey",
+          "length": 32,
+          "charset": {
+            "lowercase": true,
+            "digits": true
+          },
+          "envVars": [
+            "ZAPIER_DEPLOY_KEY"
+          ],
+          "docsUrl": "https://platform.zapier.com/cli_docs/docs#quick-setup-guide",
+          "managementUrl": "https://developer.zapier.com/partner-settings/deploy-keys/"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Zapier CLI",
+          "runs": [
+            "zapier"
+          ],
+          "docsUrl": "https://platform.zapier.com/cli_docs/docs"
+        }
+      ]
+    },
+    {
+      "name": "zendesk",
+      "platform": "Zendesk",
+      "homepage": "https://www.zendesk.com/",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "length": 40,
+          "charset": {
+            "uppercase": true,
+            "lowercase": true,
+            "digits": true,
+            "symbols": true
+          },
+          "envVars": [
+            "ZENDESK_API_TOKEN",
+            "ZENDESK_EMAIL",
+            "ZENDESK_SUBDOMAIN"
+          ],
+          "docsUrl": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/#api-token"
+        }
+      ],
+      "executables": [
+        {
+          "name": "Zendesk CLI",
+          "runs": [
+            "zcli"
+          ],
+          "docsUrl": "https://developer.zendesk.com/documentation/apps/getting-started/using-zcli/"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    "1Password/shell-plugins@ccc32b471e11 (MIT)"
+  ],
+  "updated": "2026-09-13",
+  "version": 1
+}

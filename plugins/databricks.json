@@ -1,0 +1,30 @@
+{
+  "name": "databricks",
+  "platform": "Databricks",
+  "homepage": "https://databricks.com",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "prefix": "https://",
+      "length": 38,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "DATABRICKS_HOST",
+        "DATABRICKS_TOKEN"
+      ],
+      "docsUrl": "https://docs.databricks.com/dev-tools/auth.html"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Databricks CLI",
+      "runs": [
+        "databricks"
+      ],
+      "docsUrl": "https://docs.databricks.com/dev-tools/cli/"
+    }
+  ]
+}

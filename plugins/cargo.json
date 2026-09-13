@@ -1,0 +1,24 @@
+{
+  "name": "cargo",
+  "platform": "Cargo",
+  "homepage": "https://crates.io",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "envVars": [
+        "CARGO_REGISTRY_TOKEN"
+      ],
+      "docsUrl": "https://doc.rust-lang.org/cargo/reference/config.html#credentials",
+      "managementUrl": "https://crates.io/settings/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Cargo CLI",
+      "runs": [
+        "cargo"
+      ],
+      "docsUrl": "https://doc.rust-lang.org/cargo/index.html"
+    }
+  ]
+}

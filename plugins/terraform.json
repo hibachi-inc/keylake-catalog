@@ -1,0 +1,14 @@
+{
+  "name": "terraform",
+  "platform": "Terraform",
+  "homepage": "https://www.terraform.io",
+  "executables": [
+    {
+      "name": "Terraform CLI",
+      "runs": [
+        "terraform"
+      ],
+      "docsUrl": "https://developer.hashicorp.com/terraform/cli"
+    }
+  ]
+}

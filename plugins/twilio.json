@@ -1,0 +1,33 @@
+{
+  "name": "twilio",
+  "platform": "Twilio",
+  "homepage": "https://twilio.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "AC",
+      "length": 32,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "TWILIO_ACCOUNT_SID",
+        "TWILIO_API_KEY",
+        "TWILIO_API_SECRET"
+      ],
+      "docsUrl": "https://www.twilio.com/docs/glossary/what-is-an-api-key",
+      "managementUrl": "https://www.twilio.com/console/project/api-keys"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Twilio CLI",
+      "runs": [
+        "twilio"
+      ],
+      "docsUrl": "https://twilio.com/docs/cli"
+    }
+  ]
+}

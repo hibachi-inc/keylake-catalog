@@ -1,0 +1,30 @@
+{
+  "name": "laravelforge",
+  "platform": "Laravel Forge",
+  "homepage": "https://forge.laravel.com/",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "length": 987,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "FORGE_API_TOKEN"
+      ],
+      "docsUrl": "https://forge.laravel.com/docs/1.0/accounts/api.html",
+      "managementUrl": "https://forge.laravel.com/user-profile/api"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Laravel Forge CLI",
+      "runs": [
+        "forge"
+      ],
+      "docsUrl": "https://forge.laravel.com/docs/1.0/cli.html"
+    }
+  ]
+}

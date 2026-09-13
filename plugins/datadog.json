@@ -1,0 +1,30 @@
+{
+  "name": "datadog",
+  "platform": "Datadog",
+  "homepage": "https://datadoghq.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 40,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "DATADOG_API_KEY",
+        "DATADOG_APP_KEY"
+      ],
+      "docsUrl": "https://docs.datadoghq.com/account_management/api-app-keys/",
+      "managementUrl": "https://app.datadoghq.com/organization-settings/api-keys"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Dogshell",
+      "runs": [
+        "dog"
+      ],
+      "docsUrl": "https://docs.datadoghq.com/developers/guide/dogshell-quickly-use-datadog-s-api-from-terminal-shell/"
+    }
+  ]
+}
