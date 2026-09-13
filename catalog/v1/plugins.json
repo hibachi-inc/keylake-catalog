@@ -29,6 +29,7 @@
     },
     {
       "name": "anthropic",
+      "serviceId": "anthropic",
       "platform": "Anthropic",
       "homepage": "https://anthropic.com",
       "credentials": [
@@ -408,6 +409,7 @@
     },
     {
       "name": "copilot",
+      "serviceId": "copilot",
       "platform": "GitHub Copilot",
       "homepage": "https://github.com/features/copilot/cli",
       "credentials": [
@@ -489,6 +491,7 @@
     },
     {
       "name": "cursor",
+      "serviceId": "cursor",
       "platform": "Cursor",
       "homepage": "https://cursor.com",
       "credentials": [
@@ -1486,6 +1489,7 @@
     },
     {
       "name": "openai",
+      "serviceId": "openai",
       "platform": "OpenAI",
       "homepage": "https://openai.com",
       "credentials": [
@@ -2209,6 +2213,7 @@
     },
     {
       "name": "vercel",
+      "serviceId": "vercel",
       "platform": "Vercel",
       "homepage": "https://vercel.com",
       "credentials": [

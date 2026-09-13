@@ -1,5 +1,6 @@
 {
   "name": "anthropic",
+  "serviceId": "anthropic",
   "platform": "Anthropic",
   "homepage": "https://anthropic.com",
   "credentials": [

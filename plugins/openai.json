@@ -1,5 +1,6 @@
 {
   "name": "openai",
+  "serviceId": "openai",
   "platform": "OpenAI",
   "homepage": "https://openai.com",
   "credentials": [

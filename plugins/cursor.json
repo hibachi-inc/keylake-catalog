@@ -1,5 +1,6 @@
 {
   "name": "cursor",
+  "serviceId": "cursor",
   "platform": "Cursor",
   "homepage": "https://cursor.com",
   "credentials": [

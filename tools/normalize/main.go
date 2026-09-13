@@ -51,6 +51,7 @@ type executable struct {
 
 type plugin struct {
 	Name        string       `json:"name"`
+	ServiceID   string       `json:"serviceId,omitempty"`
 	Platform    string       `json:"platform,omitempty"`
 	Homepage    string       `json:"homepage,omitempty"`
 	Credentials []credential `json:"credentials,omitempty"`
@@ -349,7 +350,6 @@ func parseFile(path string) fileInfo {
 	fi.envs = collectEnv(f)
 	return fi
 }
-
 func writeJSON(path string, v any) error {
 	b, err := json.MarshalIndent(v, "", "  ")
 	if err != nil {
@@ -357,6 +357,29 @@ func writeJSON(path string, v any) error {
 	}
 	b = append(b, '\n')
 	return os.WriteFile(path, b, 0644)
+}
+
+// loadServiceMap は keylake-map.json から上流名→serviceId対応を読む。
+func loadServiceMap(out string) map[string]string {
+	b, err := os.ReadFile(filepath.Join(out, "keylake-map.json"))
+	if err != nil {
+		return nil
+	}
+	var m struct {
+		Map map[string]struct {
+			ServiceID string `json:"serviceId"`
+		} `json:"map"`
+	}
+	if err := json.Unmarshal(b, &m); err != nil {
+		return nil
+	}
+	res := make(map[string]string, len(m.Map))
+	for k, v := range m.Map {
+		if v.ServiceID != "" {
+			res[k] = v.ServiceID
+		}
+	}
+	return res
 }
 
 func main() {
@@ -440,6 +463,10 @@ func main() {
 		all = append(all, p)
 	}
 	sort.Slice(all, func(i, j int) bool { return all[i].Name < all[j].Name })
+	svcMap := loadServiceMap(*out)
+	for i := range all {
+		all[i].ServiceID = svcMap[all[i].Name]
+	}
 
 	plugDir := filepath.Join(*out, "plugins")
 	if err := os.MkdirAll(plugDir, 0755); err != nil {
