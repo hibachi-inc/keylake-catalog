@@ -1,0 +1,30 @@
+{
+  "name": "slack",
+  "serviceId": "slack",
+  "category": "api",
+  "keywords": [
+    "slack"
+  ],
+  "platform": "Slack",
+  "homepage": "https://slack.com",
+  "credentials": [
+    {
+      "name": "BotToken",
+      "prefix": "xoxb-",
+      "envVars": [
+        "SLACK_BOT_TOKEN"
+      ],
+      "docsUrl": "https://docs.slack.dev/authentication/",
+      "managementUrl": "https://api.slack.com/apps"
+    },
+    {
+      "name": "UserToken",
+      "prefix": "xoxp-",
+      "envVars": [
+        "SLACK_TOKEN"
+      ],
+      "docsUrl": "https://docs.slack.dev/authentication/",
+      "managementUrl": "https://api.slack.com/apps"
+    }
+  ]
+}

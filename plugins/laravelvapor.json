@@ -1,5 +1,11 @@
 {
   "name": "laravelvapor",
+  "serviceId": "vapor",
+  "category": "developer-service",
+  "keywords": [
+    "laravel vapor",
+    "vapor"
+  ],
   "platform": "Laravel Vapor",
   "homepage": "https://vapor.laravel.com",
   "credentials": [

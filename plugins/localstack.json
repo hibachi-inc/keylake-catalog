@@ -1,5 +1,11 @@
 {
   "name": "localstack",
+  "serviceId": "localstack",
+  "category": "developer-service",
+  "keywords": [
+    "localstack",
+    "aws"
+  ],
   "platform": "LocalStack",
   "homepage": "https://localstack.cloud",
   "credentials": [

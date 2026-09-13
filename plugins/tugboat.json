@@ -1,5 +1,10 @@
 {
   "name": "tugboat",
+  "serviceId": "tugboat",
+  "category": "developer-service",
+  "keywords": [
+    "tugboat"
+  ],
   "platform": "Tugboat",
   "homepage": "https://tugboatqa.com",
   "credentials": [

@@ -1,5 +1,10 @@
 {
   "name": "upstash",
+  "serviceId": "upstash",
+  "category": "developer-service",
+  "keywords": [
+    "upstash"
+  ],
   "platform": "Upstash",
   "homepage": "https://upstash.com",
   "credentials": [

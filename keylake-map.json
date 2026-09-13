@@ -50,14 +50,21 @@
       "keywords": []
     },
     "cargo": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "cargo",
+      "category": "developer-service",
+      "keywords": [
+        "cargo",
+        "rust",
+        "crates"
+      ]
     },
     "circleci": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "circleci",
+      "category": "developer-service",
+      "keywords": [
+        "circleci",
+        "circle ci"
+      ]
     },
     "civo": {
       "serviceId": "",
@@ -85,9 +92,11 @@
       "keywords": []
     },
     "crowdin": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "crowdin",
+      "category": "developer-service",
+      "keywords": [
+        "crowdin"
+      ]
     },
     "cursor": {
       "serviceId": "",
@@ -132,9 +141,12 @@
       "keywords": []
     },
     "expo": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "expo",
+      "category": "developer-service",
+      "keywords": [
+        "expo",
+        "eas"
+      ]
     },
     "fastly": {
       "serviceId": "fastly",
@@ -144,14 +156,20 @@
       ]
     },
     "flyctl": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "fly",
+      "category": "developer-service",
+      "keywords": [
+        "fly.io",
+        "fly",
+        "flyctl"
+      ]
     },
     "fossa": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "fossa",
+      "category": "developer-service",
+      "keywords": [
+        "fossa"
+      ]
     },
     "gemini": {
       "serviceId": "google-gemini",
@@ -237,14 +255,20 @@
       "keywords": []
     },
     "laravelforge": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "forge",
+      "category": "developer-service",
+      "keywords": [
+        "laravel forge",
+        "forge"
+      ]
     },
     "laravelvapor": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "vapor",
+      "category": "developer-service",
+      "keywords": [
+        "laravel vapor",
+        "vapor"
+      ]
     },
     "linode": {
       "serviceId": "linode",
@@ -254,9 +278,12 @@
       ]
     },
     "localstack": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "localstack",
+      "category": "developer-service",
+      "keywords": [
+        "localstack",
+        "aws"
+      ]
     },
     "mysql": {
       "serviceId": "",
@@ -264,9 +291,11 @@
       "keywords": []
     },
     "ngrok": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "ngrok",
+      "category": "developer-service",
+      "keywords": [
+        "ngrok"
+      ]
     },
     "npm": {
       "serviceId": "npm",
@@ -277,14 +306,20 @@
       ]
     },
     "octopus": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "octopus",
+      "category": "developer-service",
+      "keywords": [
+        "octopus deploy",
+        "octopus"
+      ]
     },
     "ohdear": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "ohdear",
+      "category": "developer-service",
+      "keywords": [
+        "oh dear",
+        "ohdear"
+      ]
     },
     "okta": {
       "serviceId": "",
@@ -333,9 +368,12 @@
       ]
     },
     "readme": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "readme",
+      "category": "developer-service",
+      "keywords": [
+        "readme",
+        "rdme"
+      ]
     },
     "redis": {
       "serviceId": "",
@@ -365,14 +403,19 @@
       "keywords": []
     },
     "snyk": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "snyk",
+      "category": "developer-service",
+      "keywords": [
+        "snyk"
+      ]
     },
     "sourcegraph": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "sourcegraph",
+      "category": "developer-service",
+      "keywords": [
+        "sourcegraph",
+        "src"
+      ]
     },
     "stripe": {
       "serviceId": "stripe",
@@ -402,9 +445,11 @@
       "keywords": []
     },
     "tugboat": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "tugboat",
+      "category": "developer-service",
+      "keywords": [
+        "tugboat"
+      ]
     },
     "twilio": {
       "serviceId": "twilio",
@@ -419,9 +464,11 @@
       "keywords": []
     },
     "upstash": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "upstash",
+      "category": "developer-service",
+      "keywords": [
+        "upstash"
+      ]
     },
     "vault": {
       "serviceId": "",
@@ -462,9 +509,11 @@
       "keywords": []
     },
     "zapier": {
-      "serviceId": "",
-      "category": "",
-      "keywords": []
+      "serviceId": "zapier",
+      "category": "developer-service",
+      "keywords": [
+        "zapier"
+      ]
     },
     "zendesk": {
       "serviceId": "",

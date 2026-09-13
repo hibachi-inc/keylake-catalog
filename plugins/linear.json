@@ -1,0 +1,21 @@
+{
+  "name": "linear",
+  "serviceId": "linear",
+  "category": "developer-service",
+  "keywords": [
+    "linear"
+  ],
+  "platform": "Linear",
+  "homepage": "https://linear.app",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "prefix": "lin_api_",
+      "envVars": [
+        "LINEAR_API_KEY"
+      ],
+      "docsUrl": "https://linear.app/developers",
+      "managementUrl": "https://linear.app/settings/api"
+    }
+  ]
+}

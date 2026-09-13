@@ -1,5 +1,10 @@
 {
   "name": "ngrok",
+  "serviceId": "ngrok",
+  "category": "developer-service",
+  "keywords": [
+    "ngrok"
+  ],
   "platform": "ngrok",
   "homepage": "https://ngrok.com",
   "credentials": [

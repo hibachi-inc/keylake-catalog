@@ -1,5 +1,11 @@
 {
   "name": "ohdear",
+  "serviceId": "ohdear",
+  "category": "developer-service",
+  "keywords": [
+    "oh dear",
+    "ohdear"
+  ],
   "platform": "Oh Dear",
   "homepage": "https://ohdear.app",
   "credentials": [

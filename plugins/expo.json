@@ -1,5 +1,11 @@
 {
   "name": "expo",
+  "serviceId": "expo",
+  "category": "developer-service",
+  "keywords": [
+    "expo",
+    "eas"
+  ],
   "platform": "Expo",
   "homepage": "https://expo.dev",
   "credentials": [

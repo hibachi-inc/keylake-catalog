@@ -1,5 +1,12 @@
 {
   "name": "cargo",
+  "serviceId": "cargo",
+  "category": "developer-service",
+  "keywords": [
+    "cargo",
+    "rust",
+    "crates"
+  ],
   "platform": "Cargo",
   "homepage": "https://crates.io",
   "credentials": [
