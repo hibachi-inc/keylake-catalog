@@ -1,5 +1,10 @@
 {
   "name": "pulumi",
+  "serviceId": "pulumi",
+  "category": "developer-service",
+  "keywords": [
+    "pulumi"
+  ],
   "platform": "Pulumi",
   "homepage": "https://www.pulumi.com",
   "credentials": [

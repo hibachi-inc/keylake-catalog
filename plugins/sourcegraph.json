@@ -5,7 +5,7 @@
   "credentials": [
     {
       "name": "AccessToken",
-      "prefix": "https://",
+      "prefix": "sgp_",
       "charset": {
         "uppercase": true,
         "lowercase": true,

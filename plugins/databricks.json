@@ -5,7 +5,7 @@
   "credentials": [
     {
       "name": "PersonalAccessToken",
-      "prefix": "https://",
+      "prefix": "dapi",
       "length": 38,
       "charset": {
         "lowercase": true,

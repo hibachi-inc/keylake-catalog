@@ -1,6 +1,11 @@
 {
   "name": "anthropic",
   "serviceId": "anthropic",
+  "category": "api",
+  "keywords": [
+    "anthropic",
+    "claude api"
+  ],
   "platform": "Anthropic",
   "homepage": "https://anthropic.com",
   "credentials": [

@@ -1,5 +1,10 @@
 {
   "name": "vultr",
+  "serviceId": "vultr",
+  "category": "developer-service",
+  "keywords": [
+    "vultr"
+  ],
   "platform": "Vultr",
   "homepage": "https://vultr.com",
   "credentials": [

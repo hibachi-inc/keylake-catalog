@@ -30,6 +30,11 @@
     {
       "name": "anthropic",
       "serviceId": "anthropic",
+      "category": "api",
+      "keywords": [
+        "anthropic",
+        "claude api"
+      ],
       "platform": "Anthropic",
       "homepage": "https://anthropic.com",
       "credentials": [
@@ -119,6 +124,12 @@
     },
     {
       "name": "aws",
+      "serviceId": "aws",
+      "category": "developer-service",
+      "keywords": [
+        "aws",
+        "amazon"
+      ],
       "platform": "AWS",
       "homepage": "https://aws.amazon.com/",
       "credentials": [
@@ -409,7 +420,6 @@
     },
     {
       "name": "copilot",
-      "serviceId": "copilot",
       "platform": "GitHub Copilot",
       "homepage": "https://github.com/features/copilot/cli",
       "credentials": [
@@ -463,7 +473,6 @@
       "credentials": [
         {
           "name": "AccessToken",
-          "prefix": "https://",
           "charset": {
             "uppercase": true,
             "lowercase": true,
@@ -491,7 +500,6 @@
     },
     {
       "name": "cursor",
-      "serviceId": "cursor",
       "platform": "Cursor",
       "homepage": "https://cursor.com",
       "credentials": [
@@ -527,7 +535,7 @@
       "credentials": [
         {
           "name": "PersonalAccessToken",
-          "prefix": "https://",
+          "prefix": "dapi",
           "length": 38,
           "charset": {
             "lowercase": true,
@@ -552,6 +560,11 @@
     },
     {
       "name": "datadog",
+      "serviceId": "datadog",
+      "category": "developer-service",
+      "keywords": [
+        "datadog"
+      ],
       "platform": "Datadog",
       "homepage": "https://datadoghq.com",
       "credentials": [
@@ -612,6 +625,12 @@
     },
     {
       "name": "digitalocean",
+      "serviceId": "digitalocean",
+      "category": "developer-service",
+      "keywords": [
+        "digitalocean",
+        "doctl"
+      ],
       "platform": "DigitalOcean",
       "homepage": "https://www.digitalocean.com",
       "credentials": [
@@ -642,6 +661,11 @@
     },
     {
       "name": "doppler",
+      "serviceId": "doppler",
+      "category": "developer-service",
+      "keywords": [
+        "doppler"
+      ],
       "platform": "Doppler",
       "homepage": "https://doppler.com",
       "credentials": [
@@ -729,6 +753,11 @@
     },
     {
       "name": "fastly",
+      "serviceId": "fastly",
+      "category": "developer-service",
+      "keywords": [
+        "fastly"
+      ],
       "platform": "Fastly",
       "homepage": "https://fastly.com",
       "credentials": [
@@ -826,6 +855,13 @@
     },
     {
       "name": "gemini",
+      "serviceId": "google-gemini",
+      "category": "api",
+      "keywords": [
+        "gemini",
+        "gemini api",
+        "google ai"
+      ],
       "platform": "Google Gemini CLI",
       "homepage": "https://geminicli.com/",
       "credentials": [
@@ -861,7 +897,6 @@
       "credentials": [
         {
           "name": "PersonalAccessToken",
-          "prefix": "https://",
           "length": 40,
           "charset": {
             "uppercase": true,
@@ -885,6 +920,13 @@
     },
     {
       "name": "github",
+      "serviceId": "github",
+      "category": "developer-service",
+      "keywords": [
+        "github",
+        "gh",
+        "git"
+      ],
       "platform": "GitHub",
       "homepage": "https://github.com",
       "credentials": [
@@ -920,6 +962,12 @@
     },
     {
       "name": "gitlab",
+      "serviceId": "gitlab",
+      "category": "developer-service",
+      "keywords": [
+        "gitlab",
+        "glab"
+      ],
       "platform": "GitLab",
       "homepage": "https://gitlab.com",
       "credentials": [
@@ -983,6 +1031,11 @@
     },
     {
       "name": "heroku",
+      "serviceId": "heroku",
+      "category": "developer-service",
+      "keywords": [
+        "heroku"
+      ],
       "platform": "Heroku",
       "homepage": "https://heroku.com",
       "credentials": [
@@ -1043,6 +1096,12 @@
     },
     {
       "name": "huggingface",
+      "serviceId": "huggingface",
+      "category": "api",
+      "keywords": [
+        "huggingface",
+        "hf"
+      ],
       "platform": "Hugging Face",
       "homepage": "https://huggingface.co",
       "credentials": [
@@ -1126,6 +1185,11 @@
     },
     {
       "name": "kaggle",
+      "serviceId": "kaggle",
+      "category": "api",
+      "keywords": [
+        "kaggle"
+      ],
       "platform": "Kaggle",
       "homepage": "https://kaggle.com",
       "credentials": [
@@ -1191,7 +1255,6 @@
       "credentials": [
         {
           "name": "APIKey",
-          "prefix": "_",
           "length": 33,
           "charset": {
             "lowercase": true,
@@ -1272,6 +1335,11 @@
     },
     {
       "name": "linode",
+      "serviceId": "linode",
+      "category": "developer-service",
+      "keywords": [
+        "linode"
+      ],
       "platform": "Linode",
       "homepage": "https://linode.com",
       "credentials": [
@@ -1382,6 +1450,12 @@
     },
     {
       "name": "npm",
+      "serviceId": "npm",
+      "category": "developer-service",
+      "keywords": [
+        "npm",
+        "node"
+      ],
       "platform": "npm",
       "homepage": "https://www.npmjs.com",
       "credentials": [
@@ -1490,6 +1564,11 @@
     {
       "name": "openai",
       "serviceId": "openai",
+      "category": "api",
+      "keywords": [
+        "openai",
+        "gpt"
+      ],
       "platform": "OpenAI",
       "homepage": "https://openai.com",
       "credentials": [
@@ -1542,6 +1621,12 @@
     },
     {
       "name": "opencode",
+      "serviceId": "opencode",
+      "category": "api",
+      "keywords": [
+        "opencode",
+        "zen"
+      ],
       "platform": "OpenCode",
       "homepage": "https://opencode.ai",
       "credentials": [
@@ -1642,6 +1727,11 @@
     },
     {
       "name": "pulumi",
+      "serviceId": "pulumi",
+      "category": "developer-service",
+      "keywords": [
+        "pulumi"
+      ],
       "platform": "Pulumi",
       "homepage": "https://www.pulumi.com",
       "credentials": [
@@ -1673,6 +1763,12 @@
     },
     {
       "name": "pypi",
+      "serviceId": "pypi",
+      "category": "developer-service",
+      "keywords": [
+        "pypi",
+        "python"
+      ],
       "platform": "PyPI",
       "homepage": "https://pypi.org",
       "credentials": [
@@ -1826,6 +1922,11 @@
     },
     {
       "name": "sentry",
+      "serviceId": "sentry",
+      "category": "developer-service",
+      "keywords": [
+        "sentry"
+      ],
       "platform": "Sentry",
       "homepage": "https://sentry.io",
       "credentials": [
@@ -1923,7 +2024,7 @@
       "credentials": [
         {
           "name": "AccessToken",
-          "prefix": "https://",
+          "prefix": "sgp_",
           "charset": {
             "uppercase": true,
             "lowercase": true,
@@ -1949,6 +2050,11 @@
     },
     {
       "name": "stripe",
+      "serviceId": "stripe",
+      "category": "api",
+      "keywords": [
+        "stripe"
+      ],
       "platform": "Stripe",
       "homepage": "https://stripe.com",
       "credentials": [
@@ -2093,12 +2199,16 @@
     },
     {
       "name": "twilio",
+      "serviceId": "twilio",
+      "category": "api",
+      "keywords": [
+        "twilio"
+      ],
       "platform": "Twilio",
       "homepage": "https://twilio.com",
       "credentials": [
         {
           "name": "APIKey",
-          "prefix": "AC",
           "length": 32,
           "charset": {
             "uppercase": true,
@@ -2214,6 +2324,10 @@
     {
       "name": "vercel",
       "serviceId": "vercel",
+      "category": "developer-service",
+      "keywords": [
+        "vercel"
+      ],
       "platform": "Vercel",
       "homepage": "https://vercel.com",
       "credentials": [
@@ -2268,6 +2382,11 @@
     },
     {
       "name": "vultr",
+      "serviceId": "vultr",
+      "category": "developer-service",
+      "keywords": [
+        "vultr"
+      ],
       "platform": "Vultr",
       "homepage": "https://vultr.com",
       "credentials": [
@@ -2297,6 +2416,13 @@
     },
     {
       "name": "wrangler",
+      "serviceId": "cloudflare",
+      "category": "developer-service",
+      "keywords": [
+        "cloudflare",
+        "workers",
+        "wrangler"
+      ],
       "platform": "Cloudflare Workers",
       "homepage": "https://workers.cloudflare.com",
       "credentials": [

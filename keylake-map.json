@@ -1,250 +1,475 @@
 {
   "version": 1,
   "updated": "2026-09-14",
-  "notes": "上流プラグイン名→KeyLake serviceId対応。空は未対応(人間判断で埋める)。",
+  "notes": "上流プラグイン名→KeyLake対応。serviceId空は未対応。cursor/copilotはサブスク面と衝突するため未対応。単一シークレットでない種別(DB等)も未対応。",
   "map": {
     "akamai": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "anthropic": {
-      "serviceId": "anthropic"
+      "serviceId": "anthropic",
+      "category": "api",
+      "keywords": [
+        "anthropic",
+        "claude api"
+      ]
     },
     "argocd": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "atlas": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "aws": {
-      "serviceId": ""
+      "serviceId": "aws",
+      "category": "developer-service",
+      "keywords": [
+        "aws",
+        "amazon"
+      ]
     },
     "axiom": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "binance": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "cachix": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "cargo": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "circleci": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "civo": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "cline": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "confluent": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "copilot": {
-      "serviceId": "copilot"
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "cratedb": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "crowdin": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "cursor": {
-      "serviceId": "cursor"
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "databricks": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "datadog": {
-      "serviceId": ""
+      "serviceId": "datadog",
+      "category": "developer-service",
+      "keywords": [
+        "datadog"
+      ]
     },
     "descope": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "digitalocean": {
-      "serviceId": ""
+      "serviceId": "digitalocean",
+      "category": "developer-service",
+      "keywords": [
+        "digitalocean",
+        "doctl"
+      ]
     },
     "doppler": {
-      "serviceId": ""
+      "serviceId": "doppler",
+      "category": "developer-service",
+      "keywords": [
+        "doppler"
+      ]
     },
     "exercism": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "expo": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "fastly": {
-      "serviceId": ""
+      "serviceId": "fastly",
+      "category": "developer-service",
+      "keywords": [
+        "fastly"
+      ]
     },
     "flyctl": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "fossa": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "gemini": {
-      "serviceId": ""
+      "serviceId": "google-gemini",
+      "category": "api",
+      "keywords": [
+        "gemini",
+        "gemini api",
+        "google ai"
+      ]
     },
     "gitea": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "github": {
-      "serviceId": ""
+      "serviceId": "github",
+      "category": "developer-service",
+      "keywords": [
+        "github",
+        "gh",
+        "git"
+      ]
     },
     "gitlab": {
-      "serviceId": ""
+      "serviceId": "gitlab",
+      "category": "developer-service",
+      "keywords": [
+        "gitlab",
+        "glab"
+      ]
     },
     "hcloud": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "heroku": {
-      "serviceId": ""
+      "serviceId": "heroku",
+      "category": "developer-service",
+      "keywords": [
+        "heroku"
+      ]
     },
     "homebrew": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "huggingface": {
-      "serviceId": ""
+      "serviceId": "huggingface",
+      "category": "api",
+      "keywords": [
+        "huggingface",
+        "hf"
+      ]
     },
     "influxdb": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "junie": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "kaggle": {
-      "serviceId": ""
+      "serviceId": "kaggle",
+      "category": "api",
+      "keywords": [
+        "kaggle"
+      ]
     },
     "kiro": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "lacework": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "laravelforge": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "laravelvapor": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "linode": {
-      "serviceId": ""
+      "serviceId": "linode",
+      "category": "developer-service",
+      "keywords": [
+        "linode"
+      ]
     },
     "localstack": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "mysql": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "ngrok": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "npm": {
-      "serviceId": ""
+      "serviceId": "npm",
+      "category": "developer-service",
+      "keywords": [
+        "npm",
+        "node"
+      ]
     },
     "octopus": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "ohdear": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "okta": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "openai": {
-      "serviceId": "openai"
+      "serviceId": "openai",
+      "category": "api",
+      "keywords": [
+        "openai",
+        "gpt"
+      ]
     },
     "opencode": {
-      "serviceId": ""
+      "serviceId": "opencode",
+      "category": "api",
+      "keywords": [
+        "opencode",
+        "zen"
+      ]
     },
     "pipedream": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "postgresql": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "pulumi": {
-      "serviceId": ""
+      "serviceId": "pulumi",
+      "category": "developer-service",
+      "keywords": [
+        "pulumi"
+      ]
     },
     "pypi": {
-      "serviceId": ""
+      "serviceId": "pypi",
+      "category": "developer-service",
+      "keywords": [
+        "pypi",
+        "python"
+      ]
     },
     "readme": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "redis": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "rediscloud": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "scaleway": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "sentry": {
-      "serviceId": ""
+      "serviceId": "sentry",
+      "category": "developer-service",
+      "keywords": [
+        "sentry"
+      ]
     },
     "snowflake": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "snyk": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "sourcegraph": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "stripe": {
-      "serviceId": ""
+      "serviceId": "stripe",
+      "category": "api",
+      "keywords": [
+        "stripe"
+      ]
     },
     "terraform": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "todoist": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "tofu": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "treasuredata": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "tugboat": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "twilio": {
-      "serviceId": ""
+      "serviceId": "twilio",
+      "category": "api",
+      "keywords": [
+        "twilio"
+      ]
     },
     "upcloud": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "upstash": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "vault": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "vercel": {
-      "serviceId": "vercel"
+      "serviceId": "vercel",
+      "category": "developer-service",
+      "keywords": [
+        "vercel"
+      ]
     },
     "vertica": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "vultr": {
-      "serviceId": ""
+      "serviceId": "vultr",
+      "category": "developer-service",
+      "keywords": [
+        "vultr"
+      ]
     },
     "wrangler": {
-      "serviceId": ""
+      "serviceId": "cloudflare",
+      "category": "developer-service",
+      "keywords": [
+        "cloudflare",
+        "workers",
+        "wrangler"
+      ]
     },
     "yugabytedb": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "zapier": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     },
     "zendesk": {
-      "serviceId": ""
+      "serviceId": "",
+      "category": "",
+      "keywords": []
     }
   }
 }

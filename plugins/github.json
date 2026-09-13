@@ -1,5 +1,12 @@
 {
   "name": "github",
+  "serviceId": "github",
+  "category": "developer-service",
+  "keywords": [
+    "github",
+    "gh",
+    "git"
+  ],
   "platform": "GitHub",
   "homepage": "https://github.com",
   "credentials": [

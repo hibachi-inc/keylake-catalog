@@ -1,5 +1,10 @@
 {
   "name": "heroku",
+  "serviceId": "heroku",
+  "category": "developer-service",
+  "keywords": [
+    "heroku"
+  ],
   "platform": "Heroku",
   "homepage": "https://heroku.com",
   "credentials": [
