@@ -1,5 +1,11 @@
 {
   "name": "readme",
+  "serviceId": "readme",
+  "category": "developer-service",
+  "keywords": [
+    "readme",
+    "rdme"
+  ],
   "platform": "ReadMe",
   "homepage": "https://readme.com",
   "credentials": [

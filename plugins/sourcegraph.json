@@ -1,5 +1,11 @@
 {
   "name": "sourcegraph",
+  "serviceId": "sourcegraph",
+  "category": "developer-service",
+  "keywords": [
+    "sourcegraph",
+    "src"
+  ],
   "platform": "Sourcegraph",
   "homepage": "https://sourcegraph.com",
   "credentials": [

@@ -1,5 +1,10 @@
 {
   "name": "zapier",
+  "serviceId": "zapier",
+  "category": "developer-service",
+  "keywords": [
+    "zapier"
+  ],
   "platform": "Zapier",
   "homepage": "https://zapier.com",
   "credentials": [

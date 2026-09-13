@@ -1,0 +1,21 @@
+{
+  "name": "groq",
+  "serviceId": "groq",
+  "category": "api",
+  "keywords": [
+    "groq"
+  ],
+  "platform": "Groq",
+  "homepage": "https://groq.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "gsk_",
+      "envVars": [
+        "GROQ_API_KEY"
+      ],
+      "docsUrl": "https://console.groq.com/docs/quickstart",
+      "managementUrl": "https://console.groq.com/keys"
+    }
+  ]
+}

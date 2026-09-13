@@ -1,5 +1,11 @@
 {
   "name": "laravelforge",
+  "serviceId": "forge",
+  "category": "developer-service",
+  "keywords": [
+    "laravel forge",
+    "forge"
+  ],
   "platform": "Laravel Forge",
   "homepage": "https://forge.laravel.com/",
   "credentials": [

@@ -1,5 +1,11 @@
 {
   "name": "octopus",
+  "serviceId": "octopus",
+  "category": "developer-service",
+  "keywords": [
+    "octopus deploy",
+    "octopus"
+  ],
   "platform": "Octopus Deploy",
   "homepage": "https://octopus.com",
   "credentials": [

@@ -287,6 +287,13 @@
     },
     {
       "name": "cargo",
+      "serviceId": "cargo",
+      "category": "developer-service",
+      "keywords": [
+        "cargo",
+        "rust",
+        "crates"
+      ],
       "platform": "Cargo",
       "homepage": "https://crates.io",
       "credentials": [
@@ -311,6 +318,12 @@
     },
     {
       "name": "circleci",
+      "serviceId": "circleci",
+      "category": "developer-service",
+      "keywords": [
+        "circleci",
+        "circle ci"
+      ],
       "platform": "CircleCI",
       "homepage": "https://circleci.com",
       "credentials": [
@@ -468,6 +481,11 @@
     },
     {
       "name": "crowdin",
+      "serviceId": "crowdin",
+      "category": "developer-service",
+      "keywords": [
+        "crowdin"
+      ],
       "platform": "Crowdin",
       "homepage": "https://crowdin.com",
       "credentials": [
@@ -722,6 +740,12 @@
     },
     {
       "name": "expo",
+      "serviceId": "expo",
+      "category": "developer-service",
+      "keywords": [
+        "expo",
+        "eas"
+      ],
       "platform": "Expo",
       "homepage": "https://expo.dev",
       "credentials": [
@@ -788,6 +812,13 @@
     },
     {
       "name": "flyctl",
+      "serviceId": "fly",
+      "category": "developer-service",
+      "keywords": [
+        "fly.io",
+        "fly",
+        "flyctl"
+      ],
       "platform": "Fly.io",
       "homepage": "https://fly.io",
       "credentials": [
@@ -826,6 +857,11 @@
     },
     {
       "name": "fossa",
+      "serviceId": "fossa",
+      "category": "developer-service",
+      "keywords": [
+        "fossa"
+      ],
       "platform": "FOSSA",
       "homepage": "https://fossa.com",
       "credentials": [
@@ -996,6 +1032,27 @@
             "glab"
           ],
           "docsUrl": "https://glab.readthedocs.io"
+        }
+      ]
+    },
+    {
+      "name": "groq",
+      "serviceId": "groq",
+      "category": "api",
+      "keywords": [
+        "groq"
+      ],
+      "platform": "Groq",
+      "homepage": "https://groq.com",
+      "credentials": [
+        {
+          "name": "APIKey",
+          "prefix": "gsk_",
+          "envVars": [
+            "GROQ_API_KEY"
+          ],
+          "docsUrl": "https://console.groq.com/docs/quickstart",
+          "managementUrl": "https://console.groq.com/keys"
         }
       ]
     },
@@ -1281,6 +1338,12 @@
     },
     {
       "name": "laravelforge",
+      "serviceId": "forge",
+      "category": "developer-service",
+      "keywords": [
+        "laravel forge",
+        "forge"
+      ],
       "platform": "Laravel Forge",
       "homepage": "https://forge.laravel.com/",
       "credentials": [
@@ -1311,6 +1374,12 @@
     },
     {
       "name": "laravelvapor",
+      "serviceId": "vapor",
+      "category": "developer-service",
+      "keywords": [
+        "laravel vapor",
+        "vapor"
+      ],
       "platform": "Laravel Vapor",
       "homepage": "https://vapor.laravel.com",
       "credentials": [
@@ -1330,6 +1399,27 @@
             "vapor"
           ],
           "docsUrl": "https://docs.vapor.build/1.0/introduction.html#installing-the-vapor-cli"
+        }
+      ]
+    },
+    {
+      "name": "linear",
+      "serviceId": "linear",
+      "category": "developer-service",
+      "keywords": [
+        "linear"
+      ],
+      "platform": "Linear",
+      "homepage": "https://linear.app",
+      "credentials": [
+        {
+          "name": "APIToken",
+          "prefix": "lin_api_",
+          "envVars": [
+            "LINEAR_API_KEY"
+          ],
+          "docsUrl": "https://linear.app/developers",
+          "managementUrl": "https://linear.app/settings/api"
         }
       ]
     },
@@ -1369,6 +1459,12 @@
     },
     {
       "name": "localstack",
+      "serviceId": "localstack",
+      "category": "developer-service",
+      "keywords": [
+        "localstack",
+        "aws"
+      ],
       "platform": "LocalStack",
       "homepage": "https://localstack.cloud",
       "credentials": [
@@ -1420,6 +1516,11 @@
     },
     {
       "name": "ngrok",
+      "serviceId": "ngrok",
+      "category": "developer-service",
+      "keywords": [
+        "ngrok"
+      ],
       "platform": "ngrok",
       "homepage": "https://ngrok.com",
       "credentials": [
@@ -1473,6 +1574,12 @@
     },
     {
       "name": "octopus",
+      "serviceId": "octopus",
+      "category": "developer-service",
+      "keywords": [
+        "octopus deploy",
+        "octopus"
+      ],
       "platform": "Octopus Deploy",
       "homepage": "https://octopus.com",
       "credentials": [
@@ -1503,6 +1610,12 @@
     },
     {
       "name": "ohdear",
+      "serviceId": "ohdear",
+      "category": "developer-service",
+      "keywords": [
+        "oh dear",
+        "ohdear"
+      ],
       "platform": "Oh Dear",
       "homepage": "https://ohdear.app",
       "credentials": [
@@ -1810,6 +1923,12 @@
     },
     {
       "name": "readme",
+      "serviceId": "readme",
+      "category": "developer-service",
+      "keywords": [
+        "readme",
+        "rdme"
+      ],
       "platform": "ReadMe",
       "homepage": "https://readme.com",
       "credentials": [
@@ -1958,6 +2077,36 @@
       ]
     },
     {
+      "name": "slack",
+      "serviceId": "slack",
+      "category": "api",
+      "keywords": [
+        "slack"
+      ],
+      "platform": "Slack",
+      "homepage": "https://slack.com",
+      "credentials": [
+        {
+          "name": "BotToken",
+          "prefix": "xoxb-",
+          "envVars": [
+            "SLACK_BOT_TOKEN"
+          ],
+          "docsUrl": "https://docs.slack.dev/authentication/",
+          "managementUrl": "https://api.slack.com/apps"
+        },
+        {
+          "name": "UserToken",
+          "prefix": "xoxp-",
+          "envVars": [
+            "SLACK_TOKEN"
+          ],
+          "docsUrl": "https://docs.slack.dev/authentication/",
+          "managementUrl": "https://api.slack.com/apps"
+        }
+      ]
+    },
+    {
       "name": "snowflake",
       "platform": "Snowflake",
       "homepage": "https://snowflake.com",
@@ -1990,6 +2139,11 @@
     },
     {
       "name": "snyk",
+      "serviceId": "snyk",
+      "category": "developer-service",
+      "keywords": [
+        "snyk"
+      ],
       "platform": "Snyk",
       "homepage": "https://snyk.io",
       "credentials": [
@@ -2019,6 +2173,12 @@
     },
     {
       "name": "sourcegraph",
+      "serviceId": "sourcegraph",
+      "category": "developer-service",
+      "keywords": [
+        "sourcegraph",
+        "src"
+      ],
       "platform": "Sourcegraph",
       "homepage": "https://sourcegraph.com",
       "credentials": [
@@ -2169,6 +2329,11 @@
     },
     {
       "name": "tugboat",
+      "serviceId": "tugboat",
+      "category": "developer-service",
+      "keywords": [
+        "tugboat"
+      ],
       "platform": "Tugboat",
       "homepage": "https://tugboatqa.com",
       "credentials": [
@@ -2266,6 +2431,11 @@
     },
     {
       "name": "upstash",
+      "serviceId": "upstash",
+      "category": "developer-service",
+      "keywords": [
+        "upstash"
+      ],
       "platform": "Upstash",
       "homepage": "https://upstash.com",
       "credentials": [
@@ -2482,6 +2652,11 @@
     },
     {
       "name": "zapier",
+      "serviceId": "zapier",
+      "category": "developer-service",
+      "keywords": [
+        "zapier"
+      ],
       "platform": "Zapier",
       "homepage": "https://zapier.com",
       "credentials": [
@@ -2543,7 +2718,8 @@
     }
   ],
   "sources": [
-    "1Password/shell-plugins@ccc32b471e11 (MIT)"
+    "1Password/shell-plugins@ccc32b471e11 (MIT)",
+    "manual (groq, linear, slack)"
   ],
   "updated": "2026-09-13",
   "version": 1

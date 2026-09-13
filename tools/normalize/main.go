@@ -355,6 +355,17 @@ func parseFile(path string) fileInfo {
 	fi.envs = collectEnv(f)
 	return fi
 }
+func plugDirOf(out string) string { return filepath.Join(out, "plugins") }
+
+func hasPlugin(all []plugin, name string) bool {
+	for _, p := range all {
+		if p.Name == name {
+			return true
+		}
+	}
+	return false
+}
+
 func writeJSON(path string, v any) error {
 	b, err := json.MarshalIndent(v, "", "  ")
 	if err != nil {
@@ -467,14 +478,38 @@ func main() {
 	}
 	sort.Slice(all, func(i, j int) bool { return all[i].Name < all[j].Name })
 	svcMap := loadServiceMap(*out)
+	upstream := map[string]bool{}
 	for i := range all {
 		e, ok := svcMap[all[i].Name]
 		if !ok || e.ServiceID == "" {
 			continue
 		}
+		upstream[all[i].Name] = true
 		all[i].ServiceID = e.ServiceID
 		all[i].Category = e.Category
 		all[i].Keywords = e.Keywords
+	}
+	// 手動プラグイン (上流に無い plugins/*.json) は温存してbundleに含める。
+	// serviceId/category/keywordsはファイル内のものをそのまま使う。
+	var manual []string
+	if entries, err := os.ReadDir(plugDirOf(*out)); err == nil {
+		for _, e := range entries {
+			name := strings.TrimSuffix(e.Name(), ".json")
+			if e.IsDir() || upstream[name] || hasPlugin(all, name) {
+				continue
+			}
+			b, err := os.ReadFile(filepath.Join(plugDirOf(*out), e.Name()))
+			if err != nil {
+				continue
+			}
+			var p plugin
+			if err := json.Unmarshal(b, &p); err != nil || p.Name == "" {
+				continue
+			}
+			all = append(all, p)
+			manual = append(manual, p.Name)
+		}
+		sort.Slice(all, func(i, j int) bool { return all[i].Name < all[j].Name })
 	}
 
 	plugDir := filepath.Join(*out, "plugins")
@@ -488,10 +523,15 @@ func main() {
 			os.Exit(1)
 		}
 	}
+	sources := []string{fmt.Sprintf("1Password/shell-plugins@%s (MIT)", *sha)}
+	if len(manual) > 0 {
+		sort.Strings(manual)
+		sources = append(sources, fmt.Sprintf("manual (%s)", strings.Join(manual, ", ")))
+	}
 	bundle := map[string]any{
 		"version": 1,
 		"updated": time.Now().UTC().Format("2006-01-02"),
-		"sources": []string{fmt.Sprintf("1Password/shell-plugins@%s (MIT)", *sha)},
+		"sources": sources,
 		"notes":   "1Password shell-plugins の機械的JSON化。秘密値は含まない。NeedsAuthは関数値のため対象外。",
 		"plugins": all,
 	}

@@ -1,5 +1,11 @@
 {
   "name": "circleci",
+  "serviceId": "circleci",
+  "category": "developer-service",
+  "keywords": [
+    "circleci",
+    "circle ci"
+  ],
   "platform": "CircleCI",
   "homepage": "https://circleci.com",
   "credentials": [

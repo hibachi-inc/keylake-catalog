@@ -1,5 +1,10 @@
 {
   "name": "snyk",
+  "serviceId": "snyk",
+  "category": "developer-service",
+  "keywords": [
+    "snyk"
+  ],
   "platform": "Snyk",
   "homepage": "https://snyk.io",
   "credentials": [

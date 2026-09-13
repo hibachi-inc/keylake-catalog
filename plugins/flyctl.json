@@ -1,5 +1,12 @@
 {
   "name": "flyctl",
+  "serviceId": "fly",
+  "category": "developer-service",
+  "keywords": [
+    "fly.io",
+    "fly",
+    "flyctl"
+  ],
   "platform": "Fly.io",
   "homepage": "https://fly.io",
   "credentials": [

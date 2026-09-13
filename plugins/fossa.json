@@ -1,5 +1,10 @@
 {
   "name": "fossa",
+  "serviceId": "fossa",
+  "category": "developer-service",
+  "keywords": [
+    "fossa"
+  ],
   "platform": "FOSSA",
   "homepage": "https://fossa.com",
   "credentials": [
