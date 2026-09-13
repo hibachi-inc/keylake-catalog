@@ -52,6 +52,8 @@ type executable struct {
 type plugin struct {
 	Name        string       `json:"name"`
 	ServiceID   string       `json:"serviceId,omitempty"`
+	Category    string       `json:"category,omitempty"`
+	Keywords    []string     `json:"keywords,omitempty"`
 	Platform    string       `json:"platform,omitempty"`
 	Homepage    string       `json:"homepage,omitempty"`
 	Credentials []credential `json:"credentials,omitempty"`
@@ -235,7 +237,10 @@ func parseCredential(comp *ast.CompositeLit) credential {
 						switch ck {
 						case "Prefix":
 							if s, ok := strLit(cv); ok && c.Prefix == "" {
-								c.Prefix = s
+								// URLや短すぎる接頭辞は誤判定の元なので落とす
+								if len(s) >= 3 && !strings.HasPrefix(s, "http") {
+									c.Prefix = s
+								}
 							}
 						case "Length":
 							c.Length = intLit(cv)
@@ -359,27 +364,25 @@ func writeJSON(path string, v any) error {
 	return os.WriteFile(path, b, 0644)
 }
 
-// loadServiceMap は keylake-map.json から上流名→serviceId対応を読む。
-func loadServiceMap(out string) map[string]string {
+// loadServiceMap は keylake-map.json から上流名→対応付けを読む。
+func loadServiceMap(out string) map[string]mapEntry {
 	b, err := os.ReadFile(filepath.Join(out, "keylake-map.json"))
 	if err != nil {
 		return nil
 	}
 	var m struct {
-		Map map[string]struct {
-			ServiceID string `json:"serviceId"`
-		} `json:"map"`
+		Map map[string]mapEntry `json:"map"`
 	}
 	if err := json.Unmarshal(b, &m); err != nil {
 		return nil
 	}
-	res := make(map[string]string, len(m.Map))
-	for k, v := range m.Map {
-		if v.ServiceID != "" {
-			res[k] = v.ServiceID
-		}
-	}
-	return res
+	return m.Map
+}
+
+type mapEntry struct {
+	ServiceID string   `json:"serviceId"`
+	Category  string   `json:"category"`
+	Keywords  []string `json:"keywords"`
 }
 
 func main() {
@@ -465,7 +468,13 @@ func main() {
 	sort.Slice(all, func(i, j int) bool { return all[i].Name < all[j].Name })
 	svcMap := loadServiceMap(*out)
 	for i := range all {
-		all[i].ServiceID = svcMap[all[i].Name]
+		e, ok := svcMap[all[i].Name]
+		if !ok || e.ServiceID == "" {
+			continue
+		}
+		all[i].ServiceID = e.ServiceID
+		all[i].Category = e.Category
+		all[i].Keywords = e.Keywords
 	}
 
 	plugDir := filepath.Join(*out, "plugins")

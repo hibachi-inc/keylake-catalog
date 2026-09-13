@@ -1,5 +1,10 @@
 {
   "name": "sentry",
+  "serviceId": "sentry",
+  "category": "developer-service",
+  "keywords": [
+    "sentry"
+  ],
   "platform": "Sentry",
   "homepage": "https://sentry.io",
   "credentials": [

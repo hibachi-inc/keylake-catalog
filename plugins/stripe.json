@@ -1,5 +1,10 @@
 {
   "name": "stripe",
+  "serviceId": "stripe",
+  "category": "api",
+  "keywords": [
+    "stripe"
+  ],
   "platform": "Stripe",
   "homepage": "https://stripe.com",
   "credentials": [

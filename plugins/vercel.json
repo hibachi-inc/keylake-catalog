@@ -1,6 +1,10 @@
 {
   "name": "vercel",
   "serviceId": "vercel",
+  "category": "developer-service",
+  "keywords": [
+    "vercel"
+  ],
   "platform": "Vercel",
   "homepage": "https://vercel.com",
   "credentials": [

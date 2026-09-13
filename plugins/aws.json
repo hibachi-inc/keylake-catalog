@@ -1,5 +1,11 @@
 {
   "name": "aws",
+  "serviceId": "aws",
+  "category": "developer-service",
+  "keywords": [
+    "aws",
+    "amazon"
+  ],
   "platform": "AWS",
   "homepage": "https://aws.amazon.com/",
   "credentials": [

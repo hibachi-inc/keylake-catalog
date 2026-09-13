@@ -1,5 +1,12 @@
 {
   "name": "gemini",
+  "serviceId": "google-gemini",
+  "category": "api",
+  "keywords": [
+    "gemini",
+    "gemini api",
+    "google ai"
+  ],
   "platform": "Google Gemini CLI",
   "homepage": "https://geminicli.com/",
   "credentials": [

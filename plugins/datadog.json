@@ -1,5 +1,10 @@
 {
   "name": "datadog",
+  "serviceId": "datadog",
+  "category": "developer-service",
+  "keywords": [
+    "datadog"
+  ],
   "platform": "Datadog",
   "homepage": "https://datadoghq.com",
   "credentials": [

@@ -1,5 +1,11 @@
 {
   "name": "npm",
+  "serviceId": "npm",
+  "category": "developer-service",
+  "keywords": [
+    "npm",
+    "node"
+  ],
   "platform": "npm",
   "homepage": "https://www.npmjs.com",
   "credentials": [

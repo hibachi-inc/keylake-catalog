@@ -1,5 +1,10 @@
 {
   "name": "linode",
+  "serviceId": "linode",
+  "category": "developer-service",
+  "keywords": [
+    "linode"
+  ],
   "platform": "Linode",
   "homepage": "https://linode.com",
   "credentials": [

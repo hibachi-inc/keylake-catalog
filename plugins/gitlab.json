@@ -1,5 +1,11 @@
 {
   "name": "gitlab",
+  "serviceId": "gitlab",
+  "category": "developer-service",
+  "keywords": [
+    "gitlab",
+    "glab"
+  ],
   "platform": "GitLab",
   "homepage": "https://gitlab.com",
   "credentials": [

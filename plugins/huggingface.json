@@ -1,5 +1,11 @@
 {
   "name": "huggingface",
+  "serviceId": "huggingface",
+  "category": "api",
+  "keywords": [
+    "huggingface",
+    "hf"
+  ],
   "platform": "Hugging Face",
   "homepage": "https://huggingface.co",
   "credentials": [

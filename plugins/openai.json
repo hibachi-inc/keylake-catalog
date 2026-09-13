@@ -1,6 +1,11 @@
 {
   "name": "openai",
   "serviceId": "openai",
+  "category": "api",
+  "keywords": [
+    "openai",
+    "gpt"
+  ],
   "platform": "OpenAI",
   "homepage": "https://openai.com",
   "credentials": [

@@ -1,5 +1,11 @@
 {
   "name": "opencode",
+  "serviceId": "opencode",
+  "category": "api",
+  "keywords": [
+    "opencode",
+    "zen"
+  ],
   "platform": "OpenCode",
   "homepage": "https://opencode.ai",
   "credentials": [

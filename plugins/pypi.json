@@ -1,5 +1,11 @@
 {
   "name": "pypi",
+  "serviceId": "pypi",
+  "category": "developer-service",
+  "keywords": [
+    "pypi",
+    "python"
+  ],
   "platform": "PyPI",
   "homepage": "https://pypi.org",
   "credentials": [

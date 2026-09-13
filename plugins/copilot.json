@@ -1,6 +1,5 @@
 {
   "name": "copilot",
-  "serviceId": "copilot",
   "platform": "GitHub Copilot",
   "homepage": "https://github.com/features/copilot/cli",
   "credentials": [

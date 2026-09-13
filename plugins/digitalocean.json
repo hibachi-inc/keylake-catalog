@@ -1,5 +1,11 @@
 {
   "name": "digitalocean",
+  "serviceId": "digitalocean",
+  "category": "developer-service",
+  "keywords": [
+    "digitalocean",
+    "doctl"
+  ],
   "platform": "DigitalOcean",
   "homepage": "https://www.digitalocean.com",
   "credentials": [

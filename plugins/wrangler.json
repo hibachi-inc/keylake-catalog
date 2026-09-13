@@ -1,5 +1,12 @@
 {
   "name": "wrangler",
+  "serviceId": "cloudflare",
+  "category": "developer-service",
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "wrangler"
+  ],
   "platform": "Cloudflare Workers",
   "homepage": "https://workers.cloudflare.com",
   "credentials": [

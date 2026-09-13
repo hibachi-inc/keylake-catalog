@@ -1,5 +1,10 @@
 {
   "name": "fastly",
+  "serviceId": "fastly",
+  "category": "developer-service",
+  "keywords": [
+    "fastly"
+  ],
   "platform": "Fastly",
   "homepage": "https://fastly.com",
   "credentials": [
