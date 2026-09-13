@@ -1,0 +1,29 @@
+{
+  "name": "cachix",
+  "platform": "Cachix",
+  "homepage": "https://www.cachix.org",
+  "credentials": [
+    {
+      "name": "AuthToken",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "CACHIX_AUTH_TOKEN"
+      ],
+      "docsUrl": "https://docs.cachix.org/getting-started#authenticating",
+      "managementUrl": "https://app.cachix.org/personal-auth-tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Cachix CLI",
+      "runs": [
+        "cachix"
+      ],
+      "docsUrl": "https://docs.cachix.org"
+    }
+  ]
+}

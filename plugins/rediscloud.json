@@ -1,0 +1,21 @@
+{
+  "name": "rediscloud",
+  "platform": "Redis Cloud",
+  "homepage": "https://redis.com/redis-enterprise-cloud/overview/",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "REDISCLOUD_ACCESS_KEY",
+        "REDISCLOUD_SECRET_KEY"
+      ],
+      "docsUrl": "https://docs.redis.com/latest/rc/api/get-started/manage-api-keys/",
+      "managementUrl": "https://app.redislabs.com/#/access-management/api-keys"
+    }
+  ]
+}

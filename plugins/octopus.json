@@ -1,0 +1,30 @@
+{
+  "name": "octopus",
+  "platform": "Octopus Deploy",
+  "homepage": "https://octopus.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "API-",
+      "charset": {
+        "uppercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "OCTOPUS_API_KEY",
+        "OCTOPUS_SPACE",
+        "OCTOPUS_URL"
+      ],
+      "docsUrl": "https://octopus.com/docs/octopus-rest-api/how-to-create-an-api-key"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Octopus CLI",
+      "runs": [
+        "octopus"
+      ],
+      "docsUrl": "https://octopus.com/docs/octopus-rest-api/cli"
+    }
+  ]
+}

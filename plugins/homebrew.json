@@ -1,0 +1,31 @@
+{
+  "name": "homebrew",
+  "platform": "Homebrew",
+  "homepage": "https://brew.sh/",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "prefix": "ghp_",
+      "length": 40,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "HOMEBREW_GITHUB_API_TOKEN"
+      ],
+      "docsUrl": "https://docs.brew.sh/Manpage#environment",
+      "managementUrl": "https://github.com/settings/tokens/new?scopes=gist,repo,workflow\u0026description=Homebrew"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Homebrew CLI",
+      "runs": [
+        "brew"
+      ],
+      "docsUrl": "https://brew.sh/"
+    }
+  ]
+}

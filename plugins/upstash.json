@@ -1,0 +1,32 @@
+{
+  "name": "upstash",
+  "platform": "Upstash",
+  "homepage": "https://upstash.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 36,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true,
+        "symbols": true
+      },
+      "envVars": [
+        "UPSTASH_API_KEY",
+        "UPSTASH_EMAIL"
+      ],
+      "docsUrl": "https://docs.upstash.com/redis/account/developerapi#create-an-api-key",
+      "managementUrl": "https://console.upstash.com/account/api"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Upstash CLI",
+      "runs": [
+        "upstash"
+      ],
+      "docsUrl": "https://github.com/upstash/cli"
+    }
+  ]
+}

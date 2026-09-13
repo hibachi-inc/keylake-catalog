@@ -1,0 +1,30 @@
+{
+  "name": "hcloud",
+  "platform": "Hetzner Cloud",
+  "homepage": "https://console.hetzner.cloud",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "length": 64,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "HCLOUD_TOKEN"
+      ],
+      "docsUrl": "https://github.com/hetznercloud/cli",
+      "managementUrl": "https://console.hetzner.cloud/projects"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Hetzner Cloud CLI",
+      "runs": [
+        "hcloud"
+      ],
+      "docsUrl": "https://github.com/hetznercloud/cli"
+    }
+  ]
+}

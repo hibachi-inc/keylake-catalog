@@ -1,0 +1,32 @@
+{
+  "name": "lacework",
+  "platform": "Lacework",
+  "homepage": "https://www.lacework.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "_",
+      "length": 33,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "LW_ACCOUNT",
+        "LW_API_KEY",
+        "LW_API_SECRET"
+      ],
+      "docsUrl": "https://docs.lacework.com/console/api-access-keys",
+      "managementUrl": "https://login.lacework.net/ui?redirectUrl=/investigation/settings/apikeys"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Lacework CLI",
+      "runs": [
+        "lacework"
+      ],
+      "docsUrl": "https://docs.lacework.com/cli/"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "pulumi",
+  "platform": "Pulumi",
+  "homepage": "https://www.pulumi.com",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "prefix": "pul-",
+      "length": 44,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "PULUMI_ACCESS_TOKEN",
+        "PULUMI_BACKEND_URL"
+      ],
+      "docsUrl": "https://www.pulumi.com/docs/intro/pulumi-service/accounts/",
+      "managementUrl": "https://app.pulumi.com/account/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Pulumi CLI",
+      "runs": [
+        "pulumi"
+      ],
+      "docsUrl": "https://www.pulumi.com/docs/reference/cli/"
+    }
+  ]
+}

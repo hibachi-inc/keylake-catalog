@@ -1,0 +1,29 @@
+{
+  "name": "snyk",
+  "platform": "Snyk",
+  "homepage": "https://snyk.io",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "length": 36,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "SNYK_TOKEN"
+      ],
+      "docsUrl": "https://docs.snyk.io/snyk-api-info/authentication-for-api",
+      "managementUrl": "https://app.snyk.io/account"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Snyk CLI",
+      "runs": [
+        "snyk"
+      ],
+      "docsUrl": "https://docs.snyk.io/snyk-cli"
+    }
+  ]
+}

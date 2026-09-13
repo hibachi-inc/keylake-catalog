@@ -1,0 +1,32 @@
+{
+  "name": "anthropic",
+  "serviceId": "anthropic",
+  "platform": "Anthropic",
+  "homepage": "https://anthropic.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "sk-ant-",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true,
+        "symbols": true
+      },
+      "envVars": [
+        "ANTHROPIC_API_KEY"
+      ],
+      "docsUrl": "https://docs.anthropic.com/en/home",
+      "managementUrl": "https://console.anthropic.com/settings/keys"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Claude Code",
+      "runs": [
+        "claude"
+      ],
+      "docsUrl": "https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "flyctl",
+  "platform": "Fly.io",
+  "homepage": "https://fly.io",
+  "credentials": [
+    {
+      "name": "AccessToken",
+      "length": 43,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true,
+        "symbols": true
+      },
+      "envVars": [
+        "FLY_ACCESS_TOKEN"
+      ],
+      "docsUrl": "https://fly.io/docs/flyctl/auth-login/",
+      "managementUrl": "https://fly.io/user/personal_access_tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Fly",
+      "runs": [
+        "fly"
+      ],
+      "docsUrl": "https://fly.io/docs/flyctl/"
+    },
+    {
+      "name": "Flyctl",
+      "runs": [
+        "flyctl"
+      ],
+      "docsUrl": "https://fly.io/docs/flyctl/"
+    }
+  ]
+}

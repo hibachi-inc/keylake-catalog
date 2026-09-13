@@ -1,0 +1,24 @@
+{
+  "name": "laravelvapor",
+  "platform": "Laravel Vapor",
+  "homepage": "https://vapor.laravel.com",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "envVars": [
+        "VAPOR_API_TOKEN"
+      ],
+      "docsUrl": "https://docs.vapor.build/1.0/introduction.html",
+      "managementUrl": "https://vapor.laravel.com/app/account/api-tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Laravel Vapor CLI",
+      "runs": [
+        "vapor"
+      ],
+      "docsUrl": "https://docs.vapor.build/1.0/introduction.html#installing-the-vapor-cli"
+    }
+  ]
+}

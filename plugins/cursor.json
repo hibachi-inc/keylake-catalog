@@ -1,0 +1,31 @@
+{
+  "name": "cursor",
+  "serviceId": "cursor",
+  "platform": "Cursor",
+  "homepage": "https://cursor.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "crsr_",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "CURSOR_API_KEY"
+      ],
+      "docsUrl": "https://cursor.com/docs/cli/reference/authentication",
+      "managementUrl": "https://cursor.com/dashboard"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Cursor CLI",
+      "runs": [
+        "agent"
+      ],
+      "docsUrl": "https://cursor.com/docs/cli/overview"
+    }
+  ]
+}

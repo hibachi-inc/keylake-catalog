@@ -1,0 +1,30 @@
+{
+  "name": "doppler",
+  "platform": "Doppler",
+  "homepage": "https://doppler.com",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "prefix": "dp.",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "DOPPLER_TOKEN"
+      ],
+      "docsUrl": "https://docs.doppler.com/docs/cli",
+      "managementUrl": "https://dashboard.doppler.com/"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Doppler CLI",
+      "runs": [
+        "doppler"
+      ],
+      "docsUrl": "https://docs.doppler.com/docs/cli"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "junie",
+  "platform": "JetBrains Junie",
+  "homepage": "https://junie.jetbrains.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "envVars": [
+        "JUNIE_API_KEY"
+      ],
+      "docsUrl": "https://junie.jetbrains.com/docs/environment-variables.html",
+      "managementUrl": "https://junie.jetbrains.com/cli"
+    }
+  ],
+  "executables": [
+    {
+      "name": "JetBrains Junie CLI",
+      "runs": [
+        "junie"
+      ],
+      "docsUrl": "https://junie.jetbrains.com/docs/junie-cli-usage.html"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "influxdb",
+  "platform": "InfluxDB",
+  "homepage": "https://www.influxdata.com/",
+  "credentials": [
+    {
+      "name": "DatabaseCredentials",
+      "envVars": [
+        "INFLUX_HOST",
+        "INFLUX_ORG",
+        "INFLUX_TOKEN"
+      ],
+      "docsUrl": "https://docs.influxdata.com/influxdb/cloud/reference/cli/influx/config/"
+    }
+  ],
+  "executables": [
+    {
+      "name": "InfluxDB CLI",
+      "runs": [
+        "influx"
+      ],
+      "docsUrl": "https://docs.influxdata.com/influxdb/cloud/tools/influx-cli/"
+    }
+  ]
+}

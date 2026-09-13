@@ -1,0 +1,28 @@
+{
+  "name": "yugabytedb",
+  "platform": "YugabyteDB",
+  "homepage": "https://yugabyte.com",
+  "credentials": [
+    {
+      "name": "DatabaseCredentials",
+      "envVars": [
+        "PGDATABASE",
+        "PGHOST",
+        "PGPASSWORD",
+        "PGPORT",
+        "PGUSER"
+      ],
+      "docsUrl": "https://docs.yugabyte.com/preview/admin/ysqlsh/#connect-to-a-database",
+      "managementUrl": "https://cloud.yugabyte.com/clusters"
+    }
+  ],
+  "executables": [
+    {
+      "name": "YugabyteDB SQL Shell",
+      "runs": [
+        "ysqlsh"
+      ],
+      "docsUrl": "https://docs.yugabyte.com/preview/admin/ysqlsh/"
+    }
+  ]
+}

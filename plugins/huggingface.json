@@ -1,0 +1,34 @@
+{
+  "name": "huggingface",
+  "platform": "Hugging Face",
+  "homepage": "https://huggingface.co",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "prefix": "hf_",
+      "length": 37,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true,
+        "symbols": true
+      },
+      "envVars": [
+        "HF_ENDPOINT",
+        "HF_INFERENCE_ENDPOINT",
+        "HUGGING_FACE_HUB_TOKEN"
+      ],
+      "docsUrl": "https://huggingface.co/docs/hub/security-tokens",
+      "managementUrl": "https://huggingface.co/settings/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "HuggingFace CLI",
+      "runs": [
+        "huggingface-cli"
+      ],
+      "docsUrl": "https://huggingface.co/docs/huggingface_hub/quick-start"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "fossa",
+  "platform": "FOSSA",
+  "homepage": "https://fossa.com",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 32,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "FOSSA_API_KEY"
+      ],
+      "docsUrl": "https://docs.fossa.com/docs/api-reference#api-tokens",
+      "managementUrl": "https://app.fossa.com/account/settings/integrations/api_tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "FOSSA CLI",
+      "runs": [
+        "fossa"
+      ],
+      "docsUrl": "https://github.com/fossas/fossa-cli"
+    }
+  ]
+}

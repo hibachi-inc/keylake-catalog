@@ -1,0 +1,29 @@
+{
+  "name": "atlas",
+  "platform": "MongoDB Atlas",
+  "homepage": "https://www.mongodb.com/",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 36,
+      "charset": {
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "MONGODB_ATLAS_PRIVATE_API_KEY",
+        "MONGODB_ATLAS_PUBLIC_API_KEY"
+      ],
+      "docsUrl": "https://www.mongodb.com/docs/atlas/configure-api-access/"
+    }
+  ],
+  "executables": [
+    {
+      "name": "MongoDB Atlas CLI",
+      "runs": [
+        "atlas"
+      ],
+      "docsUrl": "https://www.mongodb.com/docs/atlas/cli/stable/"
+    }
+  ]
+}

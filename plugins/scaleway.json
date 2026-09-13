@@ -1,0 +1,35 @@
+{
+  "name": "scaleway",
+  "platform": "Scaleway",
+  "homepage": "https://scaleway.com",
+  "credentials": [
+    {
+      "name": "AccessKey",
+      "length": 36,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "SCW_ACCESS_KEY",
+        "SCW_DEFAULT_ORGANIZATION_ID",
+        "SCW_DEFAULT_PROJECT_ID",
+        "SCW_DEFAULT_REGION",
+        "SCW_DEFAULT_ZONE",
+        "SCW_SECRET_KEY"
+      ],
+      "docsUrl": "https://www.scaleway.com/en/docs/iam/how-to/create-api-keys/",
+      "managementUrl": "https://console.scaleway.com/iam/api-keys"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Scaleway CLI",
+      "runs": [
+        "scw"
+      ],
+      "docsUrl": "https://www.scaleway.com/en/cli/"
+    }
+  ]
+}

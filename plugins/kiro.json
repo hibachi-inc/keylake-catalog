@@ -1,0 +1,30 @@
+{
+  "name": "kiro",
+  "platform": "Kiro",
+  "homepage": "https://kiro.dev",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "prefix": "ksk_",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "KIRO_API_KEY"
+      ],
+      "docsUrl": "https://kiro.dev/docs/cli/authentication/",
+      "managementUrl": "https://app.kiro.dev"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Kiro CLI",
+      "runs": [
+        "kiro-cli"
+      ],
+      "docsUrl": "https://kiro.dev/docs/cli/"
+    }
+  ]
+}

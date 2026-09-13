@@ -1,0 +1,14 @@
+{
+  "name": "tofu",
+  "platform": "OpenTofu",
+  "homepage": "https://opentofu.org",
+  "executables": [
+    {
+      "name": "OpenTofu",
+      "runs": [
+        "tofu"
+      ],
+      "docsUrl": "https://opentofu.org/docs/cli"
+    }
+  ]
+}

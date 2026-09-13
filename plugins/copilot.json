@@ -1,0 +1,25 @@
+{
+  "name": "copilot",
+  "serviceId": "copilot",
+  "platform": "GitHub Copilot",
+  "homepage": "https://github.com/features/copilot/cli",
+  "credentials": [
+    {
+      "name": "AuthToken",
+      "envVars": [
+        "COPILOT_GITHUB_TOKEN"
+      ],
+      "docsUrl": "https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/authenticate-copilot-cli",
+      "managementUrl": "https://github.com/settings/personal-access-tokens/new"
+    }
+  ],
+  "executables": [
+    {
+      "name": "GitHub Copilot CLI",
+      "runs": [
+        "copilot"
+      ],
+      "docsUrl": "https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference"
+    }
+  ]
+}

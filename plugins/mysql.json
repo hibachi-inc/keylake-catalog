@@ -1,0 +1,20 @@
+{
+  "name": "mysql",
+  "platform": "MySQL",
+  "homepage": "https://mysql.com",
+  "credentials": [
+    {
+      "name": "DatabaseCredentials",
+      "docsUrl": "https://dev.mysql.com/doc/refman/en/connecting.html"
+    }
+  ],
+  "executables": [
+    {
+      "name": "mysql",
+      "runs": [
+        "mysql"
+      ],
+      "docsUrl": "https://dev.mysql.com/doc/refman/en/mysql.html"
+    }
+  ]
+}

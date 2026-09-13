@@ -1,0 +1,24 @@
+{
+  "name": "cline",
+  "platform": "Cline",
+  "homepage": "https://cline.bot",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "envVars": [
+        "CLINE_API_KEY"
+      ],
+      "docsUrl": "https://docs.cline.bot/api/authentication",
+      "managementUrl": "https://app.cline.bot"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Cline CLI",
+      "runs": [
+        "cline"
+      ],
+      "docsUrl": "https://docs.cline.bot"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "gitlab",
+  "platform": "GitLab",
+  "homepage": "https://gitlab.com",
+  "credentials": [
+    {
+      "name": "PersonalAccessToken",
+      "prefix": "glpat-",
+      "length": 26,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "GITLAB_API_HOST",
+        "GITLAB_HOST",
+        "GITLAB_TOKEN"
+      ],
+      "docsUrl": "https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html",
+      "managementUrl": "https://gitlab.com/-/profile/personal_access_tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "GitLab CLI",
+      "runs": [
+        "glab"
+      ],
+      "docsUrl": "https://glab.readthedocs.io"
+    }
+  ]
+}

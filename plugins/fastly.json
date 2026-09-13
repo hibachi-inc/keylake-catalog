@@ -1,0 +1,30 @@
+{
+  "name": "fastly",
+  "platform": "Fastly",
+  "homepage": "https://fastly.com",
+  "credentials": [
+    {
+      "name": "APIToken",
+      "length": 32,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "FASTLY_API_TOKEN"
+      ],
+      "docsUrl": "https://docs.fastly.com/en/guides/using-api-tokens",
+      "managementUrl": "https://manage.fastly.com/account/personal/tokens"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Fastly CLI",
+      "runs": [
+        "fastly"
+      ],
+      "docsUrl": "https://developer.fastly.com/reference/cli/"
+    }
+  ]
+}

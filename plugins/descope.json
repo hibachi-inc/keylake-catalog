@@ -1,0 +1,30 @@
+{
+  "name": "descope",
+  "platform": "Descope",
+  "homepage": "https://descope.com",
+  "credentials": [
+    {
+      "name": "ManagementKey",
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "DESCOPE_MANAGEMENT_KEY",
+        "DESCOPE_PROJECT_ID"
+      ],
+      "docsUrl": "https://docs.descope.com/cli/descope",
+      "managementUrl": "https://app.descope.com/settings/company/managementkeys"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Descope CLI",
+      "runs": [
+        "descope"
+      ],
+      "docsUrl": "https://docs.descope.com/cli/descope"
+    }
+  ]
+}

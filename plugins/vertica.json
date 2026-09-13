@@ -1,0 +1,27 @@
+{
+  "name": "vertica",
+  "platform": "Vertica",
+  "homepage": "https://www.vertica.com/",
+  "credentials": [
+    {
+      "name": "DatabaseCredentials",
+      "envVars": [
+        "VSQL_DATABASE",
+        "VSQL_HOST",
+        "VSQL_PASSWORD",
+        "VSQL_PORT",
+        "VSQL_USER"
+      ],
+      "docsUrl": "https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/AdministratorsGuide/DBUsersAndPrivileges/Users/CreatingADatabaseUser.htm"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Vertica CLI",
+      "runs": [
+        "vsql"
+      ],
+      "docsUrl": "https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/vsql/UsingVsql.htm"
+    }
+  ]
+}

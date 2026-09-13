@@ -1,0 +1,30 @@
+{
+  "name": "gemini",
+  "platform": "Google Gemini CLI",
+  "homepage": "https://geminicli.com/",
+  "credentials": [
+    {
+      "name": "APIKey",
+      "length": 39,
+      "charset": {
+        "uppercase": true,
+        "lowercase": true,
+        "digits": true
+      },
+      "envVars": [
+        "GEMINI_API_KEY"
+      ],
+      "docsUrl": "https://ai.google.dev/gemini-api/docs/quickstart",
+      "managementUrl": "https://aistudio.google.com/app/apikey"
+    }
+  ],
+  "executables": [
+    {
+      "name": "Google Gemini CLI",
+      "runs": [
+        "gemini"
+      ],
+      "docsUrl": "https://geminicli.com/"
+    }
+  ]
+}
